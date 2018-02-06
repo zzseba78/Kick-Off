@@ -1,0 +1,84 @@
+#top-head {
+	z-index: 9;
+	top: 0;
+	left:0;
+	right:0;
+}
+/* Left bar */
+#left-col {
+  position: fixed;
+  left: 0;
+  /* Height of the navbar default */
+  top:80px;
+  bottom:0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #222;
+  width: 280px;
+  z-index:1;
+}
+#content {
+	margin-left: 280px;
+	margin-top: 80px;
+	padding: 30px 0 0 0;
+	background-color: #f7f7f7;
+	margin-left: 0;
+	-webkit-transition: margin 0.3s cubic-bezier(.4,0,.2,1);
+	transition: margin 0.3s cubic-bezier(.4,0,.2,1);
+}
+@media screen and (min-width: 960px){
+	#content {
+		margin-left: 280px;
+	}
+}
+/* Some space in the left bar */
+.bar-content {
+	padding: 30px;
+}
+/* Remove margin top from nav dropdown */
+#top-head [class*="uk-navbar-dropdown-bottom"] {
+	margin-top: 0;
+}
+.profile-bar {
+	border-bottom: 1px solid rgba(255,255,255,0.07);
+	padding: 1rem 30px;
+}
+.bar-bottom {
+	border-top: 1px solid rgba(255,255,255,0.07);
+	padding: 15px 0;
+  display:none;
+}
+@media screen and (min-height: 730px){
+  .bar-bottom {
+    display:block;
+  }
+}
+.profile-img {
+	width: 65px;
+	border: 3px solid rgba(0,0,0,0.1);
+}
+/* Search nav */
+.search-field {
+	width: 160px;
+	-webkit-transition: all 0.25s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	transition: all 0.25s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+/* Search Effect on focus */
+.search-field:focus {
+	width: 260px;
+	border-color: #fff !important;
+}
+/* Remove shadow from card */
+.uk-card {
+	box-shadow: none;
+}
+.uk-heading-primary {
+  letter-spacing: -0.028em;
+  font-weight: 300;
+}
+/* Smooth shadow transition in card */
+.uk-card {
+	-webkit-transition: box-shadow 0.5s ease-out;
+	transition: box-shadow 0.5s ease-out;
+}
+
