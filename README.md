@@ -32,6 +32,6 @@ At the moment this layouts are available ( will be more available soon! ):
 
 |   |   |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
+| [Album](https://zzseba78.github.io/Kick-Off/album.html) | [Article](https://zzseba78.github.io/Kick-Off/article.html)       |
+| [Dashboard](https://zzseba78.github.io/Kick-Off/dashboard.html)   |             |
+| [Login](https://zzseba78.github.io/Kick-Off/login.html) |  [Login Dark](https://zzseba78.github.io/Kick-Off/login-dark.html)| 
