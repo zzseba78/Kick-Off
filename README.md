@@ -32,6 +32,6 @@ At the moment this layouts are available ( will be more available soon! ):
 
 |   |   |
 | ------------- | ------------- |
-| [Album](https://zzseba78.github.io/Kick-Off/album.html) | [Article](https://zzseba78.github.io/Kick-Off/article.html)       |
-| [Dashboard](https://zzseba78.github.io/Kick-Off/dashboard.html)   |             |
-| [Login](https://zzseba78.github.io/Kick-Off/login.html) |  [Login Dark](https://zzseba78.github.io/Kick-Off/login-dark.html)| 
+| <img src="img/album.png" width="33.33%" alt=""><br>[Album](https://zzseba78.github.io/Kick-Off/album.html) | <img src="img/article.png" width="33.33%" alt=""><br>[Article](https://zzseba78.github.io/Kick-Off/article.html)       |
+| <img src="img/dashboard.png" width="33.33%" alt=""><br>[Dashboard](https://zzseba78.github.io/Kick-Off/dashboard.html)   |             |
+| <img src="img/login.png" width="33.33%" alt=""><br>[Login](https://zzseba78.github.io/Kick-Off/login.html) |  <img src="img/login-dark.png" width="33.33%" alt=""><br>[Login Dark](https://zzseba78.github.io/Kick-Off/login-dark.html)| 
