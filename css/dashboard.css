@@ -81,4 +81,11 @@
 	-webkit-transition: box-shadow 0.5s ease-out;
 	transition: box-shadow 0.5s ease-out;
 }
-
+/*nice scrollbar*/
+   ::-webkit-scrollbar {width:11px; height:11px;}
+    ::-webkit-scrollbar-track {border:5px solid #f7f7f7; background-color:transparent;}
+    ::-webkit-scrollbar-thumb {
+        border:5px solid rgba(0, 0, 0, 0);
+        background-clip:padding-box;
+        background-color:rgba(0, 0, 0, 1);
+    }
