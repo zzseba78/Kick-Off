@@ -65,12 +65,24 @@
 				<div class="uk-container uk-container-small uk-text-center">
 					<h1>Album example</h1>
 					<p class="uk-text-large">This is a text that describes the album, its creator and something that you want to tell that is attractive.</p>
-					<div data-uk-margin>
+					<div uk-margin>
 						<div class="uk-button uk-button-primary">
 							CALL TO ACTION
 						</div>
-						<div class="uk-button uk-button-default">
-							CLICK HERE
+						<a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Open Modal</a>
+						<div id="modal-center" class="uk-flex-top" uk-modal>
+							<div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+								<button class="uk-modal-close-default" type="button" uk-close></button>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+								irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+						<a class="uk-button uk-button-default" href="#modal-media-vimeo" uk-toggle>Vimeo</a>
+						<div id="modal-media-vimeo" class="uk-flex-top" uk-modal>
+							<div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+								<button class="uk-modal-close-outside" type="button" uk-close></button>
+								<iframe src="//player.vimeo.com/video/87816089" width="500" height="281" frameborder="0" uk-video></iframe>
+							</div>
 						</div>
 					</div>
 				</div>
