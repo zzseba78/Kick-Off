@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Read Me - UIkit 3 KickOff</title>
+		<!-- CSS FILES -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css">
+		<style>
+			html {
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+			.uk-label {
+				font-size: 0.725rem;
+			}
+			.uk-container-small {
+		max-width: 48em;
+		}
+		</style>
+		
+	</head>
+	<body>
+		<div class="uk-container uk-container-small uk-section">
+			<div class="uk-position-relative">
+				<a title="Come on! Quick!" data-uk-tooltip href="#to-the-point" class="uk-position-bottom-right uk-visible@m" data-uk-scroll="offset: 30; duration: 400">Forget the "bla bla"... take me there! <span data-uk-icon="icon: arrow-down; ratio: 0.6"></span></a>
+				<img alt="UIkit 3" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/uikit.svg" width="110" class="uk-margin-bottom">
+				<h1 class="uk-margin-remove">UIkit 3 KickOff</h1>
+				<h4 class="uk-margin-small">Quick start for your project! <img src="https://image.flaticon.com/icons/svg/251/251978.svg" width="40" alt=""></h4>
+				<a title="Come on! Quick!" data-uk-tooltip href="#to-the-point" class="uk-hidden@m" data-uk-scroll="offset: 30; duration: 400">Forget the "bla bla"... take me there! <span data-uk-icon="icon: arrow-down; ratio: 0.6"></span></a>
+			</div>
+			
+			<hr>
+			
+			<h3>Goals</h3>
+			<p>UIkit 3 KickOff it´s a Codepen project, and the main goal is <strong>quickly get you started on your project</strong> with UIkit 3, bringing a <strong>solid layout foundation</strong> to work upon.</p>
+			
+			<h3>CSS Styles</h3>
+			<p>All the layouts are only using UIkit default styles, no extra css it´s added to keep things <strong>clean and simple.</strong></p>
+			<p>The css styles are the minified latest version of UIKit 3 ( currently 3.0.0-beta.35 ) from the cdn, you can find it <a href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/css/uikit.min.css" target="_blank">here</a>.</p>
+			
+			<h3>HTML</h3>
+			<p>The code try to be as simple as possible, with commented sections, validated and semantic html5 markup.</p>
+			
+			<h3>JS</h3>
+			<p>Since UIkit 3 removed JQuery dependancy, it´s not included. All JS implementations are created by adding <code>data-uk-*</code> attributes to the HTML elements. No additional JS lines are added.</p>
+			<p>The <code>uikit.min.js</code> file is the minified latest version of UIKit 3 ( currently 3.0.0-beta.35 ) from the cdn, you can find it <a href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js" target="_blank">here</a>.</p>
+			<p>The <code>data-uk-*</code> syntax it´s used in order to work with every library and get html code validated.</p>
+			
+			<h3>Components</h3>
+			<p>All used components from UIkit 3 used in each layout are listed in order to know what is required.</p>
+			
+			<h3 id="to-the-point">Layouts</h3>
+			<p>At the moment this layouts are available ( will be more available soon! <img src="https://image.flaticon.com/icons/svg/511/511225.svg" alt="" width="24"> ):</p>
+		</div>
+		<div class="uk-container">
+			<div class="uk-grid uk-child-width-1-3@m " data-uk-grid>
+				<!-- layout -->
+				<div>
+					<div class="uk-inline">
+						<div class="uk-position-top-right uk-position-small"><span class="uk-label">NEW</span></div>
+						<img alt="Login" src="https://zzseba78.github.io/Kick-Off/img/login.png">
+						<a href="https://zzseba78.github.io/Kick-Off/login.html" class="uk-position-cover" title="Login"></a>
+					</div>
+					<div class="uk-text-center">
+						<h2 class="uk-margin-top uk-margin-small-bottom">Login</h2>
+						<span>Let people log into your site/app</span>
+						<div class="uk-margin-small">
+							<a class="uk-link-reset uk-text-small" data-uk-icon="icon: triangle-down" data-uk-toggle="target: + .used; animation: uk-animation-fade">Used components</a>
+							<div class="uk-margin-small-top used" hidden>
+								<span class="uk-label">Align</span> <span class="uk-label">Animation</span> <span class="uk-label">Background</span> <span class="uk-label">Base</span> <span class="uk-label">Button</span> <span class="uk-label">Icon</span> <span class="uk-label">Flex</span> <span class="uk-label">Form</span> <span class="uk-label">Text</span> <span class="uk-label">Toggle</span> <span class="uk-label">Utility</span> <span class="uk-label">Visibility</span> <span class="uk-label">Width</span>
+							</div>
+							
+						</div>
+					</div>
+					
+				</div>
+				<!-- /layout -->
+				<!-- layout -->
+				<div>
+					<div class="uk-inline">
+						<div class="uk-position-top-right uk-position-small"><span class="uk-label">NEW</span></div>
+						<img alt="Login" src="https://zzseba78.github.io/Kick-Off/img/login-dark.png">
+						<a href="https://zzseba78.github.io/Kick-Off/login-dark.html" class="uk-position-cover" title="Login"></a>
+					</div>
+					<div class="uk-text-center">
+						<h2 class="uk-margin-top uk-margin-small-bottom">Login <small>( Dark )</small></h2>
+						<span>Let people log into your site/app</span>
+						<div class="uk-margin-small">
+							<a class="uk-link-reset uk-text-small" data-uk-icon="icon: triangle-down" data-uk-toggle="target: + .used; animation: uk-animation-fade">Used components</a>
+							<div class="uk-margin-small-top used" hidden>
+								<span class="uk-label">Align</span> <span class="uk-label">Animation</span> <span class="uk-label">Background</span> <span class="uk-label">Base</span> <span class="uk-label">Button</span> <span class="uk-label">Icon</span> <span class="uk-label">Flex</span> <span class="uk-label">Form</span> <span class="uk-label">Text</span> <span class="uk-label">Toggle</span> <span class="uk-label">Utility</span> <span class="uk-label">Visibility</span> <span class="uk-label">Width</span>
+							</div>
+							
+						</div>
+					</div>
+					
+				</div>
+				<!-- /layout -->
+				<!-- layout -->
+				<div>
+					<div class="uk-inline">
+						<div class="uk-position-top-right uk-position-small"><span class="uk-label">NEW</span></div>
+						<img alt="Album" src="https://zzseba78.github.io/Kick-Off/img/album.png">
+						<a href="https://zzseba78.github.io/Kick-Off/album.html" class="uk-position-cover" title="Album"></a>
+					</div>
+					<div class="uk-text-center">
+						<h2 class="uk-margin-top uk-margin-small-bottom">Album</h2>
+						<span>Show picture collections and give then a full view</span>
+						<div class="uk-margin-small">
+							<a class="uk-link-reset uk-text-small" data-uk-icon="icon: triangle-down" data-uk-toggle="target: + .used; animation: uk-animation-fade">Used components</a>
+							<div class="uk-margin-small-top used" hidden>
+								<span class="uk-label">Align</span>
+								<span class="uk-label">Animation</span>
+								<span class="uk-label">Background</span>
+								<span class="uk-label">Align</span>
+								<span class="uk-label">Badge</span>
+								<span class="uk-label">Base</span>
+								<span class="uk-label">Button</span>
+								<span class="uk-label">Card</span>
+								<span class="uk-label">Close</span>
+								<span class="uk-label">Container</span>
+								<span class="uk-label">Dropdown</span>
+								<span class="uk-label">Flex</span>
+								<span class="uk-label">Grid</span>
+								<span class="uk-label">Icons</span>
+								<span class="uk-label">Margin</span>
+								<span class="uk-label">Nav</span>
+								<span class="uk-label">Navbar</span>
+								<span class="uk-label">Offcanvas</span>
+								<span class="uk-label">Overlay</span>
+								<span class="uk-label">Position</span>
+								<span class="uk-label">Scrollspy</span>
+								<span class="uk-label">Text</span>
+								<span class="uk-label">Transition</span>
+								<span class="uk-label">Utility</span>
+								<span class="uk-label">Width</span>
+							</div>
+							
+						</div>
+					</div>
+					
+				</div>
+				<!-- /layout -->
+
+				<!-- layout -->
+				<div>
+					<div class="uk-inline">
+						<div class="uk-position-top-right uk-position-small"><span class="uk-label">NEW</span></div>
+						<img alt="Article" src="https://zzseba78.github.io/Kick-Off/img/article.png">
+						<a href="https://zzseba78.github.io/Kick-Off/article.html" class="uk-position-cover" title="Article"></a>
+					</div>
+					<div class="uk-text-center">
+						<h2 class="uk-margin-top uk-margin-small-bottom">Article</h2>
+						<span>Show your articles in a clean and elegant way.</span>
+						<div class="uk-margin-small">
+							<a class="uk-link-reset uk-text-small" data-uk-icon="icon: triangle-down" data-uk-toggle="target: + .used; animation: uk-animation-fade">Used components</a>
+							<div class="uk-margin-small-top used" hidden>
+								<span class="uk-label">Align</span>
+								<span class="uk-label">Animation</span>
+								<span class="uk-label">Background</span>
+								<span class="uk-label">Align</span>
+								<span class="uk-label">Badge</span>
+								<span class="uk-label">Base</span>
+								<span class="uk-label">Button</span>
+								<span class="uk-label">Card</span>
+								<span class="uk-label">Close</span>
+								<span class="uk-label">Container</span>
+                <span class="uk-label">Cover</span>
+								<span class="uk-label">Dropdown</span>
+								<span class="uk-label">Flex</span>
+								<span class="uk-label">Grid</span>
+								<span class="uk-label">Icons</span>
+								<span class="uk-label">Margin</span>
+								<span class="uk-label">Nav</span>
+								<span class="uk-label">Navbar</span>
+								<span class="uk-label">Offcanvas</span>
+								<span class="uk-label">Position</span>
+								<span class="uk-label">Search</span>
+								<span class="uk-label">Slideshow</span>
+                <span class="uk-label">SlideNav</span>
+								<span class="uk-label">Sticky</span>
+								<span class="uk-label">Text</span>
+								<span class="uk-label">Utility</span>
+								<span class="uk-label">Width</span>
+							</div>
+							
+						</div>
+					</div>
+					
+				</div>
+				<!-- /layout -->
+				<!-- layout -->
+				<div>
+					<div class="uk-inline">
+						<div class="uk-position-top-right uk-position-small"><span class="uk-label">NEW</span></div>
+						<img alt="Article" src="https://zzseba78.github.io/Kick-Off/img/dashboard.png">
+						<a href="https://zzseba78.github.io/Kick-Off/dashboard.html" class="uk-position-cover" title="Dashboard"></a>
+					</div>
+					<div class="uk-text-center">
+						<h2 class="uk-margin-top uk-margin-small-bottom">Dashboard</h2>
+						<span>** Uses some <strong>custom css code</strong> **</span>
+						<div class="uk-margin-small">
+							<a class="uk-link-reset uk-text-small" data-uk-icon="icon: triangle-down" data-uk-toggle="target: + .used; animation: uk-animation-fade">Used components</a>
+							<div class="uk-margin-small-top used" hidden>
+								<span class="uk-label">Align</span>
+								<span class="uk-label">Animation</span>
+								<span class="uk-label">Align</span>
+								<span class="uk-label">Background</span>
+								<span class="uk-label">Base</span>
+								<span class="uk-label">Card</span>
+								<span class="uk-label">Close</span>
+								<span class="uk-label">Container</span>
+								<span class="uk-label">Dropdown</span>
+								<span class="uk-label">Flex</span>
+								<span class="uk-label">Grid</span>
+								<span class="uk-label">Icons</span>
+								<span class="uk-label">Inverse</span>
+								<span class="uk-label">Margin</span>
+								<span class="uk-label">Nav</span>
+								<span class="uk-label">Navbar</span>
+								<span class="uk-label">Offcanvas</span>
+								<span class="uk-label">Position</span>
+								<span class="uk-label">Search</span>
+								<span class="uk-label">Text</span>
+								<span class="uk-label">Utility</span>
+								<span class="uk-label">Width</span>
+							</div>
+							
+						</div>
+					</div>
+					
+				</div>
+				<!-- /layout -->
+
+				<div class="uk-width-2-3 uk-margin-auto">
+					<div data-uk-alert class="uk-alert-primary uk-padding">...more to come for sure!!</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="uk-container uk-container-small uk-section">
+			<hr>
+			<h3>About the author ( me <img alt="" src="https://image.flaticon.com/icons/svg/136/136380.svg" width="24"> )</h3>
+			<div class="uk-card uk-card-body uk-card-default">
+				<div class="uk-grid uk-grid-medium uk-flex uk-flex-middle" data-uk-grid>
+					<div class="uk-width-1-6">
+						<img src="https://zzseba78.github.io/Kick-Off/img/me.jpg" alt="Me!" class="uk-border-circle">
+					</div>
+					<div class="uk-width-5-6">
+						<div class="uk-grid" data-uk-grid>
+							<div class="uk-width-1-2">
+								<h3 class="uk-margin-remove">Sebastián Zahn</h3>
+								<span class="uk-text-muted uk-text-small">Designer and Frontend Developer from Montevideo, Uruguay.</span>
+							</div>
+							
+							<div class="uk-width-1-2">
+								<span class="uk-text-small">Currently working on:</span>
+								<ul class="uk-margin-small uk-text-small">
+									<li>ADestuDio</li>
+									<li>Grupo de Mentes</li>
+									<li>byHumansWorks</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h3>And more important of all... enjoy! <img src="https://image.flaticon.com/icons/svg/179/179538.svg" alt="" width="36"></h3>
+			<iframe data-uk-responsive width="850" height="450" src="https://www.youtube.com/embed/0W6WZK3AfKE" allowfullscreen></iframe>
+		</div>
+		
+		<!-- JS FILES -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+	</body>
+</html>
