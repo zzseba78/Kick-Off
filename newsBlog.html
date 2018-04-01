@@ -30,12 +30,18 @@
 			h1, h2, h3, h4, h5, h6 {
 				font-weight: 700;
 			}
+			.uk-logo > img {
+				height: 58px;
+			}
+			#header.uk-sticky-below {
+				box-shadow: 0 2px 14px 0 rgba(0,0,0,0.07);
+			}
 		</style>
 	</head>
 	<body>
 		<div class="uk-offcanvas-content">
 			<!--HEADER-->
-			<header style="background-color: #fff;">
+			<header id="header" style="background-color: #fff;" uk-sticky="show-on-up: true; animation: uk-animation-fade; media: @l">
 				<div class="uk-container">
 					<nav id="navbar" data-uk-navbar="mode: click;">
 						<div class="uk-navbar-left nav-overlay uk-visible@m">
@@ -49,7 +55,7 @@
 							</ul>
 						</div>
 						<div class="uk-navbar-center nav-overlay">
-							<a class="uk-navbar-item uk-logo" href="#">Logo</a>
+							<a class="uk-navbar-item uk-logo" href="#"><img src="n-logo.png"></a>
 						</div>
 						<div class="uk-navbar-right nav-overlay">
 							<a class="uk-navbar-toggle uk-visible@m" data-uk-search-icon data-uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
@@ -187,11 +193,11 @@
 								</li>
 							</ul>
 						</div>
-						<div class="uk-hidden@m uk-light">
+						<div class="uk-hidden@l uk-light">
 							<a class="uk-position-center-left uk-position-small" href="#" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
 							<a class="uk-position-center-right uk-position-small" href="#" data-uk-slidenav-next data-uk-slider-item="next"></a>
 						</div>
-						<div class="uk-visible@m">
+						<div class="uk-visible@l">
 							<a class="uk-position-center-left-out uk-position-small" href="#" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
 							<a class="uk-position-center-right-out uk-position-small" href="#" data-uk-slidenav-next data-uk-slider-item="next"></a>
 						</div>
