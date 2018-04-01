@@ -11,6 +11,7 @@ All the layouts are only using UIkit default styles, no extra css it´s added to
 The css styles are the minified latest version of UIKit 3 ( currently 3.0.0-beta.40 ) from the cdn.
 HTML
 
+### HTML5
 The code try to be as simple as possible, with commented sections, validated and semantic html5 markup.
 
 ### JS
