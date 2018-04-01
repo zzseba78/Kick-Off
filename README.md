@@ -27,7 +27,7 @@ All used components from UIkit 3 used in each layout are listed in order to know
 
 ### Images
 
-All used images are random images from https://picsum.photos/
+All used pictures are random images from https://picsum.photos/
 
 ### Layouts
 
