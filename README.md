@@ -2,7 +2,7 @@
 
 ### Goals
 
-KickOff it´s a Github project, and the main goal is <strong>quickly get you started on your project</strong> with <a href="https://getuikit.com/" target="_blank">UIkit 3</a>, bringing a <strong>solid layout foundation</strong> to work upon.
+The main goal of KickOff is <strong>quickly get you started on your project</strong> with <a href="https://getuikit.com/" target="_blank">UIkit 3</a>, bringing a <strong>solid layout foundation</strong> to work upon.
 
 ### CSS Styles
 
