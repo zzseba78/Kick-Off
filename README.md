@@ -12,7 +12,7 @@ The css styles are the minified latest version of UIKit 3 ( currently 3.0.0-beta
 HTML
 
 ### HTML
-The code try to be as simple as possible, with commented sections, validated and semantic html5 markup.
+The code try to be as simple as possible, with commented sections, <strong>validated and semantic</strong> html5 markup.
 
 ### JS
 
