@@ -1,4 +1,4 @@
-<img src="https://zzseba78.github.io/Kick-Off/img/kickOff-logo.svg" width="190px" alt="">
+<img src="https://zzseba78.github.io/Kick-Off/img/kickOff-logo.svg" width="220px" alt="">
 
 ### Goals
 
