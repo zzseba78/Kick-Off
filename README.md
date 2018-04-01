@@ -1,5 +1,4 @@
-# Kick-Off <img src="https://image.flaticon.com/icons/svg/251/251978.svg" width="40px" alt="">
-Quick start for your UIkit project!
+<img src="https://zzseba78.github.io/Kick-Off/img/kickOff-logo.svg" width="190px" alt="">
 
 ### Goals
 
