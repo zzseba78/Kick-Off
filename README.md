@@ -1,6 +1,6 @@
 <img src="https://zzseba78.github.io/Kick-Off/img/kickOff-logo.svg" width="240px" alt="KickOff">
 
-### tarter layouts for your UIKit 3 project.
+### Starter layouts for your UIKit 3 project.
 
 ### Goals
 
