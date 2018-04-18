@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>FAQ MultiMenu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    #nav.uk-navbar-container{background:#3f51b5}.uk-border-rounded{border-radius:10px}.uk-section-muted{background:aliceblue}#pocket{transform:rotate(180deg)}
+    </style>
+  </head>
+  <body>
+    <div id="nav" class="uk-navbar-container">
+      <div class="uk-container">
+        <nav class="uk-margin uk-navbar uk-light" data-uk-navbar>
+          <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+              <li>
+                <button class="uk-button uk-button-default" type="button">Left</button>
+                <div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li class="uk-parent">
+                      <a href="#">Parent</a>
+                      <ul class="uk-nav-sub">
+                        <li><a href="#">Sub item</a></li>
+                        <li><a href="#">Sub item</a></li>
+                      </ul>
+                    </li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#"><span class="uk-margin-small-right data-uk-icon" data-uk-icon="icon: table"></span> Item</a></li>
+                    <li><a href="#"><span class="uk-margin-small-right data-uk-icon" data-uk-icon="icon: thumbnails"></span> Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#"><span class="uk-margin-small-right data-uk-icon" data-uk-icon="icon: heart"></span> Item</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav">
+              <li class="uk-active"><a href="#">Active</a></li>
+              <li>
+                <a href="#">Parent</a>
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li class="uk-parent">
+                      <a href="#">Parent</a>
+                      <ul class="uk-nav-sub">
+                        <li><a href="#">Natural Selection</a></li>
+                        <li><a href="#">Instinct</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">Amyon <span class="uk-margin-small-left" data-uk-icon="icon:chevron-down"></span></a>
+                <div class="uk-navbar-dropdown" data-uk-dropdown="animation: uk-animation-slide-left-medium">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li><a href="#">Mucomycetes</a></li>
+                    <li>
+                      <a href="#">
+                        Sylicomycetes
+                        <span class="uk-float-right" data-uk-icon="icon:chevron-right"></span>
+                      </a>
+                      <div data-uk-dropdown="pos: right-top">
+                        <ul class="uk-nav uk-dropdown-nav">
+                          <li class="uk-active"><a href="#">Active</a></li>
+                          <li><a href="#">Amphybia-Terranus</a></li>
+                          <li class="uk-nav-header">Phylosophicomycetes</li>
+                          <li>
+                            <a href="#">
+                              Amicomycetes
+                              <span class="uk-float-right" data-uk-icon="icon:chevron-right"></span>
+                            </a>
+                            <div data-uk-dropdown="pos: right-top">
+                              <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Amyomicetes</a></li>
+                                <li class="uk-nav-header">Header</li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Mince</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Amnyomicetes</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li><a href="#">Mycomicetes</a></li>
+                          <li class="uk-nav-divider"></li>
+                          <li><a href="#">PolipSchylycoMycetes</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="#">Amyomincetes</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-navbar-right">
+            <div class="uk-navbar-item">
+              <div class="uk-inline">
+                <button class="uk-button uk-button-default" type="button">Dropdown</button>
+                <div data-uk-dropdown>
+                  <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Item</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="uk-section uk-section-muted">
+      <div class="uk-container">
+        <div data-uk-grid class="uk-child-width-1-2">
+          <div>
+            <div class="uk-card uk-card-default uk-card-body animated fadeIn uk-border-rounded">
+              <div class="uk-card-badge"><i data-feather="feather"></i></div>
+              <h3 class="uk-card-title">Do androids dream of electric sheep?</h3>
+              <p>The obvious and implicit answer to the question is, "No, they dream of real sheep", just as we do.</p>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body animated fadeIn uk-border-rounded">
+              <div class="uk-card-badge"><i data-feather="box"></i></div>
+              <h3 class="uk-card-title ion-social-buffer-outline">Sapphire</h3>
+              <p>Morebi round that's blue, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body animated fadeIn uk-border-rounded">
+              <div class="uk-card-badge"><i data-feather="chevron-up"></i></div>
+              <h3 class="uk-card-title">Cat species</h3>
+              <p>Devonshire rex abyssinian and ocicat american shorthair. Norwegian forest american bobtail, for grimalkin siamese. Bombay birman malkin. Tomcat burmese mouser, singapura or munchkin. Leopard tomcat. </p>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body animated fadeIn uk-border-rounded">
+              <div class="uk-card-badge"><i data-feather="download"></i></div>
+              <h3 class="uk-card-title ion-social-buffer-outline">Egyptian Cotton</h3>
+              <p>Morebi round that's blue, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body animated fadeIn uk-border-rounded">
+              <div class="uk-card-badge"><i data-feather="edit"></i></div>
+              <h3 class="uk-card-title">Null</h3>
+              <p>Proident adipisicing laborum beef ribs tri-tip dolore meatball tempor rump flank prosciutto elit do. Duis tenderloin culpa excepteur.</p>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body animated fadeIn uk-border-rounded">
+              <div class="uk-card-badge uk-label ion-bonfire">☄️ APPAREL</div>
+              <h3 class="uk-card-title ion-social-buffer-outline">Jeans</h3>
+              <p>Avalanche round that's blue, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body animated fadeIn uk-border-rounded">
+              <div class="uk-card-badge"><i data-feather="gitlab"></i></div>
+              <h3 class="uk-card-title">Lorem ipsum dolor</h3>
+              <p>Balinese singapura. Turkish angora panther so burmese american shorthair. Tabby mouser abyssinian himalayan birman balinese yet himalayan. </p>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body animated fadeIn uk-border-rounded">
+              <div class="uk-card-badge"><i data-feather="award"></i></div>
+              <h3 class="uk-card-title ion-social-buffer-outline">Cornflower</h3>
+              <p>Morebi round that's blue, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body animated fadeIn uk-border-rounded">
+              <div class="uk-card-badge"><i data-feather="heart"></i></div>
+              <h3 class="uk-card-title">Muirside</h3>
+              <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim</p>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body animated fadeIn uk-border-rounded">
+              <div class="uk-card-badge"><i data-feather="tag"></i></div>
+              <h3 class="uk-card-title ion-social-buffer-outline">Oxford Blue</h3>
+              <p>Morebi round that's blue, consectetur adipiscing elit, sed sum</p>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body animated fadeIn uk-border-rounded">
+              <div class="uk-card-badge"><i id="pocket" data-feather="pocket"></i></div>
+              <h3 class="uk-card-title">Plato</h3>
+            <blockquote>Those who tell the stories rule society</blockquote>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body animated fadeIn uk-border-rounded">
+            <div class="uk-card-badge"><i data-feather="terminal"></i></div>
+            <h3 class="uk-card-title ion-social-buffer-outline">Fargo</h3>
+            <p>Morebi round that's blue, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body animated fadeIn uk-border-rounded">
+            <div class="uk-card-badge"><i data-feather="pocket"></i></div>
+            <h3 class="uk-card-title">{{TEXT}}</h3>
+            <p>{{@}}</p>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body animated fadeIn uk-border-rounded">
+            <div class="uk-card-badge"><i data-feather="x-square"></i></div>
+            <h3 class="uk-card-title ion-social-buffer-outline">Azure</h3>
+            <p>Morebi round that's blue, consectetur adipiscing elit, sea.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js'></script>
+  <script src='https://unpkg.com/feather-icons/dist/feather.min.js'></script>
+  <script >feather.replace()</script>
+</body>
+</html>
