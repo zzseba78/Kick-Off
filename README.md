@@ -42,3 +42,6 @@ At the moment this layouts are available ( will be more available soon! ):
 |[<img src="img/dashboard.png" width="100%" alt=""><br>Dashboard](https://zzseba78.github.io/Kick-Off/dashboard.html)|[<img src="img/login.png" width="100%" alt=""><br>Login](https://zzseba78.github.io/Kick-Off/login.html)|
 |[<img src="img/login-dark.png" width="100%" alt=""><br>Login Dark](https://zzseba78.github.io/Kick-Off/login-dark.html)|[<img src="img/newsBlog.png" width="100%" alt=""><br>News Blog](https://zzseba78.github.io/Kick-Off/newsBlog.html)| 
 |[<img src="img/price.png" width="100%" alt=""><br>Price](https://zzseba78.github.io/Kick-Off/price.html)|
+
+#### Copyright and License
+Copyright 2018 byHumans under the [MIT license](LICENSE).
