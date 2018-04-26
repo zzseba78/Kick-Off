@@ -11,7 +11,6 @@ The main goal of KickOff is to <strong>quickly get you started on your project</
 All the layouts are only using UIkit default styles, no extra css it´s added to keep things clean and simple.
 
 The css styles are the minified latest version of UIKit 3 ( currently 3.0.0-beta.42 ) from the cdn.
-HTML
 
 ### HTML
 The code try to be as simple as possible, with commented sections, <strong>validated and semantic</strong> html5 markup.
