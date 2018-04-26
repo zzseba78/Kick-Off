@@ -1,7 +1,7 @@
 <img src="https://zzseba78.github.io/Kick-Off/img/kickOff-logo.svg" width="280px" alt="KickOff">
 
-### Starter layouts for your UIKit 3 project.
-
+#### Starter layouts for your UIKit 3 project.
+<hr>
 ### Goals
 
 The main goal of KickOff is to <strong>quickly get you started on your project</strong> with <a href="https://getuikit.com/" target="_blank">UIkit 3</a>, bringing a <strong>solid layout foundation</strong> to work upon.
