@@ -2,6 +2,7 @@
 
 #### Starter layouts for your UIKit 3 project.
 <hr>
+
 ### Goals
 
 The main goal of KickOff is to <strong>quickly get you started on your project</strong> with <a href="https://getuikit.com/" target="_blank">UIkit 3</a>, bringing a <strong>solid layout foundation</strong> to work upon.
