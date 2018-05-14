@@ -34,7 +34,7 @@ All used pictures are random images from https://picsum.photos/
 
 ### Layouts
 
-At the moment this layouts are available ( will be more available soon! ):
+At the moment these layouts are available ( more will be available soon! )
 
 |   |   |
 | ------------- | ------------- |
