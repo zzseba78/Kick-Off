@@ -45,3 +45,15 @@ At the moment this layouts are available ( will be more available soon! ):
 
 #### Copyright and License
 Copyright 2018 byHumans under the [MIT license](LICENSE).
+
+---
+
+<p align="center">
+  <b>UIkit is an Open Source project developed by YOOtheme.</b>
+  <br><br>
+  <a href="https://yootheme.com" align="center">
+      <img width="134" height="30" src="http://yootheme.com/pro/images/logo.svg">
+  </a>
+</p>
+
+---
