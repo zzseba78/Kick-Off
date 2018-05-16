@@ -34,7 +34,7 @@ All used pictures are random images from https://picsum.photos/
 
 ### New Layout
 
-<img src="img/cards.png" width="100%" alt="">(https://zzseba78.github.io/Kick-Off/cards.html)
+<a href="https://zzseba78.github.io/Kick-Off/cards.html"><img src="img/cards.png" width="100%" alt=""></a>
 
 ### More Layouts
 
