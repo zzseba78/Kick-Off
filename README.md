@@ -32,7 +32,11 @@ All used components from UIkit 3 used in each layout are listed in order to know
 
 All used pictures are random images from https://picsum.photos/
 
-### Layouts
+### New Layout
+
+<img src="img/cards.png" width="100%" alt="">(https://zzseba78.github.io/Kick-Off/cards.html)
+
+### More Layouts
 
 At the moment these layouts are available ( more will be available soon! )
 
