@@ -1,0 +1,133 @@
+#site-head {
+	padding: 10px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	background-color: white;
+	border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.uk-logo img {
+	width: 50px;
+}
+.spacer {
+	height: 60px;
+}
+.uk-card {
+	border-top: 2px solid;
+	position: relative;
+	-webkit-transition: box-shadow 0.15s ease-out;
+	transition: box-shadow 0.15s ease-out;
+	border-radius: 3px;
+}
+.uk-card:hover {
+	box-shadow: 0 0 0 7px rgba(0,0,0,0.045);
+}
+.uk-card .uk-inline {
+	z-index: 99;
+}
+.uk-card .uk-card-footer {
+	padding: 0.55rem 1rem;
+}
+.uk-card .uk-card-header {
+	padding: 0.55rem 1rem;
+}
+.uk-card .cat-txt {
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	letter-spacing: 0.01em;
+}
+.nature-card .uk-card {
+	border-top-color: #1E87F0;
+}
+.nature-card .uk-card .cat-txt {
+	color: #1E87F0;
+}
+.music-card .uk-card {
+	border-top-color: #8630F0;
+}
+.art-card .uk-card .cat-txt {
+	color: #8630F0;
+}
+.design-card .uk-card {
+	border-top-color: #E84DF0;
+}
+.design-card .uk-card .cat-txt {
+	color: #E84DF0;
+}
+.photo-card .uk-card {
+	border-top-color: #F03A7F;
+}
+.photo-card .uk-card .cat-txt {
+	color: #F03A7F;
+}
+.uk-card .uk-overlay-primary {
+	padding:  0.5rem;
+	text-align: center;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	opacity: 0.7;
+}
+img[data-src][src*='data:image'] { background: rgba(0,0,0,0.1); }
+.search-fld {
+	border-radius: 50px;
+	padding: 0 1rem;
+}
+.uk-dropdown.drop-nav {
+	border-radius: 4px;
+	box-shadow: 0 2px 24px rgba(0,0,0,.1);
+	width: 300px;
+}
+.uk-dropdown.drop-comments {
+	width: 370px;
+}
+.drop-nav::after {
+	bottom: 100%;
+	right: 4%;
+	border: solid transparent;
+	content: '';
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #ffffff;
+	border-width: 6px;
+	margin-left: -6px;
+}
+.uk-dropdown.uk-dropdown-right-center::after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #ffffff;
+	border-width: 6px;
+	margin-top: -6px;
+}
+.uk-dropdown.uk-dropdown-left-center::after {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #ffffff;
+	border-width: 6px;
+	margin-top: -6px;
+}
+.message {
+	font-size: 0.85rem;
+	display: block;
+	line-height: 1.3rem;
+	padding: 0.5rem 0;
+}
