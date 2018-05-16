@@ -39,7 +39,7 @@ At the moment these layouts are available ( more will be available soon! )
 
 <a href="https://zzseba78.github.io/Kick-Off/dashboard.html"><img src="img/Dashboard.png" width="100%" alt=""></a>
 
-<a href="https://zzseba78.github.io/Kick-Off/blog.html"><img src="img/Blog.png" width="100%" alt=""></a>
+<a href="https://zzseba78.github.io/Kick-Off/newsBlog.html"><img src="img/Blog.png" width="100%" alt=""></a>
 
 <a href="https://zzseba78.github.io/Kick-Off/article.html"><img src="img/Article.png" width="100%" alt=""></a>
 
