@@ -16,6 +16,10 @@
 	right: 0;
 	font-size: 0.8rem;
 }
+.uk-section-xsmall {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
 .uk-logo img {
 	width: 50px;
 }
