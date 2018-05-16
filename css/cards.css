@@ -54,6 +54,9 @@
 .nature-card .uk-card {
 	border-top-color: #1E87F0;
 }
+.uk-subnav li a {
+	border-radius: 3px; 
+}
 .uk-subnav li.uk-active:nth-child(3) a {
 	background-color:#8630F0;
 }
