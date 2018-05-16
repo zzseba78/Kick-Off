@@ -54,6 +54,15 @@
 .nature-card .uk-card {
 	border-top-color: #1E87F0;
 }
+.uk-subnav li.uk-active:nth-child(3) {
+	background-color:#8630F0;
+}
+.uk-subnav li.uk-active:nth-child(4) {
+	background-color:#E84DF0;
+}
+.uk-subnav li.uk-active:nth-child(5) {
+	background-color:#F03A7F;
+}
 .nature-card .uk-card .cat-txt {
 	color: #1E87F0;
 }
