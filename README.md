@@ -9,7 +9,7 @@ The main goal of KickOff is to <strong>quickly get you started on your project</
 
 ### CSS Styles
 
-All the layouts are only using UIkit default styles, no extra css it´s added to keep things clean and simple.
+All the layouts are based on default UIkit styles to keeps things clean and simple, but some layouts may use some custom css code.
 
 The css styles are the minified latest version of UIKit 3 ( currently 3.0.0-rc.2 ) from the cdn.
 
