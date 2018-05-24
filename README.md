@@ -52,8 +52,8 @@ At the moment these layouts are available ( more will be available soon! )
 <a href="https://zzseba78.github.io/Kick-Off/login.html"><img src="img/Login.png" width="100%" alt=""></a>
 
 
-#### Copyright and License
-Copyright 2018 byHumans under the [MIT license](LICENSE).
+####  License
+2018 byHumans under the [MIT license](LICENSE).
 
 ---
 
