@@ -155,3 +155,12 @@ img[data-src][src*='data:image'] { background: rgba(0,0,0,0.1); }
 	line-height: 1.3rem;
 	padding: 0.5rem 0;
 }
+.img.lazy {
+	opacity: 0;
+	display: block;
+	-webkit-transition: all 0.7s ease;
+	transition: all 1s ease;
+}
+img.lazy[src^="https"] {
+	opacity: 1;
+}
