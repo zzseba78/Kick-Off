@@ -156,11 +156,14 @@ img[data-src][src*='data:image'] { background: rgba(0,0,0,0.1); }
 	padding: 0.5rem 0;
 }
 img.lazy {
-	opacity: 0;
-	display: block;
-	-webkit-transition: all 0.7s ease;
-	transition: all 1s ease;
+	-webkit-transition: all 0.5s cubic-bezier(.4,0,.2,1);
+	transition: all 0.5s cubic-bezier(.4,0,.2,1);
 }
-img.lazy[src^="https"] {
+img.lazy:not([src]) { visibility: hidden; }
+img.lazy[src^='data:image'] { 
+	visibility: visible;
+	opacity: 0;
+}
+img.lazy[src]:not[src^='data:image'] {
 	opacity: 1;
 }
