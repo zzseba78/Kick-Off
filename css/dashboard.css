@@ -18,11 +18,10 @@
   z-index:1;
 }
 #content {
-	margin-left: 280px;
+	margin-left: 0;
 	margin-top: 80px;
 	padding: 30px 0 0 0;
 	background-color: #f7f7f7;
-	margin-left: 0;
 	-webkit-transition: margin 0.3s cubic-bezier(.4,0,.2,1);
 	transition: margin 0.3s cubic-bezier(.4,0,.2,1);
 }
