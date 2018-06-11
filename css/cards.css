@@ -155,10 +155,6 @@ img[data-src][src*='data:image'] { background: rgba(0,0,0,0.1); }
 	line-height: 1.3rem;
 	padding: 0.5rem 0;
 }
-img.lazy {
-	-webkit-transition: all 1s cubic-bezier(.4,0,.2,1);
-	transition: all 1s cubic-bezier(.4,0,.2,1);
-}
 img.lazy:not([src]) { visibility: hidden; }
 img.lazy[src^='data:image'] { 
 	visibility: visible;
@@ -166,4 +162,6 @@ img.lazy[src^='data:image'] {
 }
 img.lazy[src]:not[src^='data:image'] {
 	opacity: 1;
+	-webkit-transition: opacity 1s ease-out;
+	transition: opacity 1s ease-out);
 }
