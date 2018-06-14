@@ -45,10 +45,10 @@
 				visibility: visible;
 				opacity: 0;
 			}
-			img.lazy:not([src^='data:image']) {
+			img.lazy[src]:not([src^='data:image']) {
 				opacity: 1;
 				-webkit-transition: opacity 1s ease-out;
-				transition: opacity 1s ease-out);
+				transition: opacity 1s ease-out;
 			}
 		</style>
 	</head>
