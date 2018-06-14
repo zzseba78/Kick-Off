@@ -155,13 +155,3 @@ img[data-src][src*='data:image'] { background: rgba(0,0,0,0.1); }
 	line-height: 1.3rem;
 	padding: 0.5rem 0;
 }
-img.lazy { visibility: hidden; }
-img.lazy[src^='data:image'] { 
-	visibility: visible;
-	opacity: 0;
-}
-img.lazy[src]:not([src^='data:image']) {
-	opacity: 1;
-	-webkit-transition: opacity 1s ease-out;
-	transition: opacity 1s ease-out;
-}
