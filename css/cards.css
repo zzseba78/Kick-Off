@@ -29,7 +29,6 @@
 .uk-card {
 	border-top: 2px solid;
 	position: relative;
-	-webkit-transition: box-shadow 0.15s ease-out;
 	transition: box-shadow 0.15s ease-out;
 	border-radius: 3px;
 }
