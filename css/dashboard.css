@@ -22,7 +22,6 @@
 	margin-top: 80px;
 	padding: 30px 0 0 0;
 	background-color: #f7f7f7;
-	-webkit-transition: margin 0.3s cubic-bezier(.4,0,.2,1);
 	transition: margin 0.3s cubic-bezier(.4,0,.2,1);
 }
 @media screen and (min-width: 960px){
@@ -59,7 +58,6 @@
 /* Search nav */
 .search-field {
 	width: 160px;
-	-webkit-transition: all 0.25s cubic-bezier(0.175, 0.885, 0.320, 1.275);
 	transition: all 0.25s cubic-bezier(0.175, 0.885, 0.320, 1.275);
 }
 /* Search Effect on focus */
@@ -77,6 +75,5 @@
 }
 /* Smooth shadow transition in card */
 .uk-card {
-	-webkit-transition: box-shadow 0.5s ease-out;
 	transition: box-shadow 0.5s ease-out;
 }
