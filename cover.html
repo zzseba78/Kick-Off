@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="uk-height-1-1">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cover - UIkit 3 KickOff</title>
+		<link rel="icon" href="img/favicon.ico">
+		<!-- CSS FILES -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css">
+		<style>
+			.wrap::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				content: '';
+				z-index: 1;
+				background-color: rgba(0,0,0,0.55);
+			}
+			.lead {
+				font-size: 1.2em;
+				font-weight: 300;
+			}
+		</style>
+	</head>
+	<body class="uk-height-1-1 uk-light uk-position-relative wrap uk-background-norepeat uk-background-cover uk-background-center-center uk-background-secondary" style="background-image: url(https://picsum.photos/2000/1000/?image=1067)">
+		<div class="uk-offcanvas-content">
+			<div class="uk-flex uk-flex-center uk-flex-middle uk-height-viewport uk-position-z-index uk-position-relative">
+				<!-- navbar -->
+				<div class="uk-position-top">
+					<div class="uk-container uk-container-small">
+						<nav class="uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+							<div class="uk-navbar-left">
+								<div class="uk-navbar-item">
+									<a href=""><img src="assets/cover-logo.svg" alt=""></a>
+								</div>
+							</div>
+							<div class="uk-navbar-right uk-visible@s">
+								<ul class="uk-navbar-nav">
+									<li class="uk-active"><a href="" data-uk-icon="home"></a></li>
+									<li><a href="">Features</a></li>
+									<li><a href="">Security</a></li>
+									<li><a href="">Testimonials</a></li>
+									<li><a class="uk-navbar-toggle" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a></li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+				<!-- /navbar -->
+				
+				<div class="uk-container uk-container-small uk-flex-auto uk-text-center">
+					<h1 class="uk-heading-primary" style="font-weight: 700;">Sleek, Fast and Reliable.</h1>
+					<div class="uk-width-4-5@m uk-margin-auto">
+						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad, reiciendis maxime, facilis nam natus incidunt culpa, provident quam doloremque repellat.</p>
+					</div>
+					<div class="uk-margin-medium-top" data-uk-margin>
+						<a class="uk-button uk-button-default uk-button-large uk-width-2-3 uk-width-auto@s" data-uk-icon="arrow-right" title="Learn More">LEARN MORE</a>
+						<a class="uk-button uk-button-primary uk-button-large uk-width-2-3 uk-width-auto@s" data-uk-icon="check" title="Learn More">TRY IT OUT</a>
+					</div>
+				</div>
+				<div class="uk-position-bottom-center uk-position-small">
+					<span class="uk-text-small uk-text-center">© 2018 | <a href="https://github.com/zzseba78/Kick-Off" title="Created by KickOff">Created by KickOff</a> | Built with <a href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank" data-uk-tooltip><span data-uk-icon="uikit"></span></a></span>
+				</div>
+			</div>
+			<!-- OFFCANVAS -->
+			<div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: false">
+				<div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+					<button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close></button>
+					<ul class="uk-nav uk-nav-default">
+						<li class="uk-active"><a href="#">Active</a></li>
+						<li class="uk-parent">
+							<a href="#">Parent</a>
+							<ul class="uk-nav-sub">
+								<li><a href="#">Sub item</a></li>
+								<li><a href="#">Sub item</a></li>
+							</ul>
+						</li>
+						<li class="uk-nav-header">Header</li>
+						<li><a href="#js-options"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: table"></span> Item</a></li>
+						<li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: thumbnails"></span> Item</a></li>
+						<li class="uk-nav-divider"></li>
+						<li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: trash"></span> Item</a></li>
+					</ul>
+					<h3>Title</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+			<!-- /OFFCANVAS -->
+		</div>
+		
+		<!-- JS FILES -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
+	</body>
+</html>
