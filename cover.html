@@ -16,11 +16,14 @@
 				bottom: 0;
 				content: '';
 				z-index: 1;
-				background-color: rgba(0,0,0,0.55);
+				background-color: rgba(0,0,0,0.5);
 			}
 			.lead {
 				font-size: 1.2em;
 				font-weight: 300;
+			}
+			.uk-logo img {
+				height: 28px;
 			}
 		</style>
 	</head>
@@ -33,15 +36,15 @@
 						<nav class="uk-navbar-container uk-navbar-transparent" data-uk-navbar>
 							<div class="uk-navbar-left">
 								<div class="uk-navbar-item">
-									<a class="uk-logo" href=""><img src="assets/cover-logo.svg" alt=""></a>
+									<a class="uk-logo" href=""><img src="img/cover-logo.svg" alt=""></a>
 								</div>
 							</div>
-							<div class="uk-navbar-right uk-visible@s">
+							<div class="uk-navbar-right">
 								<ul class="uk-navbar-nav">
-									<li class="uk-active"><a href="" data-uk-icon="home"></a></li>
-									<li><a href="">Features</a></li>
-									<li><a href="">Security</a></li>
-									<li><a href="">Testimonials</a></li>
+									<li class="uk-active uk-visible@m"><a href="" data-uk-icon="home"></a></li>
+									<li class="uk-visible@s"><a href="">Features</a></li>
+									<li class="uk-visible@s"><a href="">Security</a></li>
+									<li class="uk-visible@s"><a href="">Testimonials</a></li>
 									<li><a class="uk-navbar-toggle" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a></li>
 								</ul>
 							</div>
