@@ -1,7 +1,7 @@
 <img src="https://zzseba78.github.io/Kick-Off/img/kickOff-logo.svg" width="280px" alt="KickOff">
 <img src="img/100.png" width="100%" alt="">
 
-#### Starter layouts for your UIKit 3 project.
+#### UIkit 3 Starter Layout / Templates for your UIKit 3 project.
 <hr>
 
 ### Goals
