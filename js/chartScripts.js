@@ -88,7 +88,7 @@ new Chart(char3El, {
     datasets: [{
       label: "Population (millions)",
       backgroundColor: ["#39f", "#895df6", "#3cba9f", "#e8c3b9", "#c45850"],
-      data: [900, 7000, 5700, 1800, 5600]
+      data: [900, 7000, 5700, 2800, 5600]
     }]
   },
   options: {
