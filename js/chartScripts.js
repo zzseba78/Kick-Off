@@ -88,7 +88,7 @@ new Chart(char3El, {
     datasets: [{
       label: "Population (millions)",
       backgroundColor: ["#39f", "#895df6", "#3cba9f", "#e8c3b9", "#c45850"],
-      data: [1200, 5267, 3404, 1800, 3900]
+      data: [900, 7000, 5700, 1800, 5600]
     }]
   },
   options: {
@@ -102,7 +102,7 @@ new Chart(char3El, {
     },
     title: {
       display: true,
-      text: 'Predicted world population (millions) in 2050'
+      text: 'Predicted activity in 2020'
     }
   }
 });
