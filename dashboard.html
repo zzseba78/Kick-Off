@@ -4,9 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Dashboard - UIkit 3 KickOff</title>
-		<link rel="icon" href="img/favicon.ico">
 		<!-- CSS FILES -->
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css">
 		<link rel="stylesheet" type="text/css" href="css/dashboard.css">
 	</head>
 	<body>
@@ -14,11 +13,13 @@
 			<!--HEADER-->
 			<header id="top-head" class="uk-position-fixed">
 				<div class="uk-container uk-container-expand uk-background-primary">
-					<nav class="uk-navbar uk-light" data-uk-navbar="mode:click">
+					<nav class="uk-navbar uk-light" data-uk-navbar="mode:click; duration: 250">
 						<div class="uk-navbar-left">
-							<a class="uk-navbar-item uk-logo" href="#">Logo</a>
+							<div class="uk-navbar-item uk-hidden@m">
+								<a class="uk-logo" href="#"><img class="custom-logo" src="img/dashboard-logo-white.svg" alt=""></a>
+							</div>
 							<ul class="uk-navbar-nav uk-visible@m">
-								<li class="uk-active"><a href="#">Accounts</a></li>
+								<li><a href="#">Accounts</a></li>
 								<li>
 									<a href="#">Settings <span data-uk-icon="icon: triangle-down"></span></a>
 									<div class="uk-navbar-dropdown">
@@ -31,7 +32,6 @@
 											<li><a href="#"><span data-uk-icon="icon: image"></span> Your Data</a></li>
 											<li class="uk-nav-divider"></li>
 											<li><a href="#"><span data-uk-icon="icon: sign-out"></span> Logout</a></li>
-											
 										</ul>
 									</div>
 								</li>
@@ -45,25 +45,10 @@
 						</div>
 						<div class="uk-navbar-right">
 							<ul class="uk-navbar-nav">
-								<li>
-									<a href="#" data-uk-icon="icon:user"></a>
-									<div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left">
-										<ul class="uk-nav uk-navbar-dropdown-nav">
-											<li class="uk-nav-header">YOUR ACCOUNT</li>
-											<li><a href="#"><span data-uk-icon="icon: info"></span> Summary</a></li>
-											<li><a href="#"><span data-uk-icon="icon: refresh"></span> Edit</a></li>
-											<li><a href="#"><span data-uk-icon="icon: settings"></span> Configuration</a></li>
-											<li class="uk-nav-divider"></li>
-											<li><a href="#"><span data-uk-icon="icon: image"></span> Your Pictures</a></li>
-											<li class="uk-nav-divider"></li>
-											<li><a href="#"><span data-uk-icon="icon: sign-out"></span> Logout</a></li>
-											
-										</ul>
-									</div>
-								</li>
-								<li><a href="#" data-uk-icon="icon: settings"></a></li>
-								<li><a href="#" data-uk-icon="icon: cog"></a></li>
-								<li><a class="uk-navbar-toggle" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a></li>
+								<li><a href="#" data-uk-icon="icon:user" title="Your profile" data-uk-tooltip></a></li>
+								<li><a href="#" data-uk-icon="icon: settings" title="Settings" data-uk-tooltip></a></li>
+								<li><a href="#" data-uk-icon="icon:  sign-out" title="Sign Out" data-uk-tooltip></a></li>
+								<li><a class="uk-navbar-toggle" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav" title="Offcanvas" data-uk-tooltip></a></li>
 							</ul>
 						</div>
 					</nav>
@@ -72,77 +57,86 @@
 			<!--/HEADER-->
 			<!-- LEFT BAR -->
 			<aside id="left-col" class="uk-light uk-visible@m">
-				<div class="profile-bar">
-					<div class="uk-grid uk-grid-small uk-flex uk-flex-middle" data-uk-grid>
-						<div class="uk-width-auto"><img src="img/photo.jpg" alt="" class="uk-border-circle profile-img"></div>
-						<div class="uk-width-expand">
-							<span class="uk-text-small uk-text-muted">Welcome</span>
-							<h4 class="uk-margin-remove-vertical text-light">Finn the Human</h4>
-						</div>
+				<div class="left-logo uk-flex uk-flex-middle">
+					<img class="custom-logo" src="img/dashboard-logo.svg" alt="">
+				</div>
+				<div class="left-content-box  content-box-dark">
+					<img src="assets/avatar.svg" alt="" class="uk-border-circle profile-img">
+					<h4 class="uk-text-center uk-margin-remove-vertical text-light">John Doe</h4>
+					
+					<div class="uk-position-relative uk-text-center uk-display-block">
+					    <a href="#" class="uk-text-small uk-text-muted uk-display-block uk-text-center" data-uk-icon="icon: triangle-down; ratio: 0.7">Admin</a>
+					    <!-- user dropdown -->
+					    <div class="uk-dropdown user-drop" data-uk-dropdown="mode: click; pos: bottom-center; animation: uk-animation-slide-bottom-small; duration: 150">
+					    	<ul class="uk-nav uk-dropdown-nav uk-text-left">
+									<li><a href="#"><span data-uk-icon="icon: info"></span> Summary</a></li>
+									<li><a href="#"><span data-uk-icon="icon: refresh"></span> Edit</a></li>
+									<li><a href="#"><span data-uk-icon="icon: settings"></span> Configuration</a></li>
+									<li class="uk-nav-divider"></li>
+									<li><a href="#"><span data-uk-icon="icon: image"></span> Your Data</a></li>
+									<li class="uk-nav-divider"></li>
+									<li><a href="#"><span data-uk-icon="icon: sign-out"></span> Sign Out</a></li>
+						    </ul>
+					    </div>
+					    <!-- /user dropdown -->
 					</div>
 				</div>
 				
-				<div class="bar-content uk-position-relative">
-					<ul class="uk-nav-default uk-nav-parent-icon" data-uk-nav>
-						<li class="uk-nav-header">MAIN SECTIONS</li>
-						<li class="uk-parent uk-open">
-							<a href="#">Parent</a>
+				<div class="left-nav-wrap">
+					<ul class="uk-nav uk-nav-default uk-nav-parent-icon" data-uk-nav>
+						<li class="uk-nav-header">ACTIONS</li>
+						<li><a href="#"><span data-uk-icon="icon: comments" class="uk-margin-small-right"></span>Messages</a></li>
+						<li><a href="#"><span data-uk-icon="icon: users" class="uk-margin-small-right"></span>Friends</a></li>
+						<li class="uk-parent"><a href="#"><span data-uk-icon="icon: thumbnails" class="uk-margin-small-right"></span>Rooms</a>
 							<ul class="uk-nav-sub">
-								<li><a href="#">Sub item</a></li>
-								<li><a href="#">Sub item</a></li>
+								<li><a href="#">Ipsum Dolor</a></li>
+								<li><a href="#">Officia deserunt</a></li>
+								<li><a href="#">Duis aute irure</a></li>
+								<li><a href="#">Ut enim ad minim</a></li>
 							</ul>
 						</li>
+						<li><a href="#"><span data-uk-icon="icon: album" class="uk-margin-small-right"></span>Albums</a></li>
+						<li><a href="#"><span data-uk-icon="icon: thumbnails" class="uk-margin-small-right"></span>Featured Content</a></li>
+						<li><a href="#"><span data-uk-icon="icon: lifesaver" class="uk-margin-small-right"></span>Tips</a></li>
 						<li class="uk-parent">
-							<a href="#">Parent</a>
+							<a href="#"><span data-uk-icon="icon: comments" class="uk-margin-small-right"></span>Reports</a>
 							<ul class="uk-nav-sub">
 								<li><a href="#">Sub item</a></li>
 								<li><a href="#">Sub item</a></li>
 							</ul>
 						</li>
-						<li class="uk-parent">
-							<a href="#">Parent</a>
-							<ul class="uk-nav-sub">
-								<li><a href="#">Sub item</a></li>
-								<li><a href="#">Sub item</a></li>
-							</ul>
-						</li>
-						<li class="uk-nav-header">SECONDARY</li>
-						<li class="uk-parent">
-							<a href="#">Parent</a>
-							<ul class="uk-nav-sub">
-								<li><a href="#">Sub item</a></li>
-								<li><a href="#">Sub item</a></li>
-							</ul>
-						</li>
-						<li class="uk-parent">
-							<a href="#">Parent</a>
-							<ul class="uk-nav-sub">
-								<li><a href="#">Sub item</a></li>
-								<li><a href="#">Sub item</a></li>
-							</ul>
-						</li>
-		<li class="uk-nav-header">LIST OF PAGES</li>
-						<li><a href="album.html"><span class="uk-margin-small-right" data-uk-icon="icon: image"></span> Album</a></li>
-						<li><a href="article.html"><span class="uk-margin-small-right" data-uk-icon="icon: info"></span> Article</a></li>
-						<li class="uk-nav-divider"></li>
-						<li><a href="login.html"><span class="uk-margin-small-right" data-uk-icon="icon: sign-in"></span> Login</a></li>
-						<li><a href="login-dark.html"><span class="uk-margin-small-right" data-uk-icon="icon: sign-in"></span> Login-Dark</a></li>
 					</ul>
+					<div class="left-content-box uk-margin-top">
+						
+							<h5>Daily Reports</h5>
+							<div>
+								<span class="uk-text-small">Traffic <small>(+50)</small></span>
+								<progress class="uk-progress" value="50" max="100"></progress>
+							</div>
+							<div>
+								<span class="uk-text-small">Income <small>(+78)</small></span>
+								<progress class="uk-progress success" value="78" max="100"></progress>
+							</div>
+							<div>
+								<span class="uk-text-small">Feedback <small>(-12)</small></span>
+								<progress class="uk-progress warning" value="12" max="100"></progress>
+							</div>
+						
+					</div>
+					
 				</div>
-				<div class="uk-position-bottom bar-bottom">
-					<ul class="uk-subnav uk-flex uk-flex-center uk-child-width-1-6" data-uk-grid>
+				<div class="bar-bottom">
+					<ul class="uk-subnav uk-flex uk-flex-center uk-child-width-1-5" data-uk-grid>
 						<li>
-							<a href="#" class="uk-icon-link" data-uk-icon="icon: home"></a>
+							<a href="#" class="uk-icon-link" data-uk-icon="icon: home" title="Home" data-uk-tooltip></a>
 						</li>
 						<li>
-							<a href="#" class="uk-icon-link" data-uk-icon="icon: settings"></a>
+							<a href="#" class="uk-icon-link" data-uk-icon="icon: settings" title="Settings" data-uk-tooltip></a>
 						</li>
 						<li>
-							<a href="#" class="uk-icon-link" data-uk-icon="icon: social"></a>
+							<a href="#" class="uk-icon-link" data-uk-icon="icon: social"  title="Social" data-uk-tooltip></a>
 						</li>
-						<li>
-							<a href="#" class="uk-icon-link" data-uk-icon="icon: comment"></a>
-						</li>
+						
 						<li>
 							<a href="#" class="uk-icon-link" data-uk-tooltip="Sign out" data-uk-icon="icon: sign-out"></a>
 						</li>
@@ -197,23 +191,67 @@
 						</div>
 					</div>
 					<hr>
-					<div class="uk-grid uk-grid-medium uk-grid-match" data-uk-grid>
+					<div class="uk-grid uk-grid-medium" data-uk-grid>
+						
 						<!-- panel -->
-						<div class="uk-width-2-3@l uk-width-1-2@xl">
+						<div class="uk-width-1-2@l">
 							<div class="uk-card uk-card-default uk-card-small uk-card-hover">
 								<div class="uk-card-header">
 									<div class="uk-grid uk-grid-small">
-										<div class="uk-width-auto"><h4 class="uk-margin-remove-bottom">Geographic Chart</h4></div>
-										<div class="uk-width-expand uk-text-right">
-											<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="icon: move"></a>
-											<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="icon: cog"></a>
-											<a href="#" class="uk-icon-link" data-uk-icon="icon: close"></a>
+										<div class="uk-width-auto"><h4>Sales Chart</h4></div>
+										<div class="uk-width-expand uk-text-right panel-icons">
+											<a href="#" class="uk-icon-link" title="Move" data-uk-tooltip data-uk-icon="icon: move"></a>
+											<a href="#" class="uk-icon-link" title="Configuration" data-uk-tooltip data-uk-icon="icon: cog"></a>
+											<a href="#" class="uk-icon-link" title="Close" data-uk-tooltip data-uk-icon="icon: close"></a>
 										</div>
 									</div>
 								</div>
 								<div class="uk-card-body">
-									<img src="img/mapa1.svg" alt="">
-									<p class="uk-text-muted uk-text-small uk-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<div class="chart-container">
+										<canvas id="chart2"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /panel -->
+						<!-- panel -->
+						<div class="uk-width-1-2@l">
+							<div class="uk-card uk-card-default uk-card-small uk-card-hover">
+								<div class="uk-card-header">
+									<div class="uk-grid uk-grid-small">
+										<div class="uk-width-auto"><h4>Predictions Chart</h4></div>
+										<div class="uk-width-expand uk-text-right panel-icons">
+											<a href="#" class="uk-icon-link" title="Move" data-uk-tooltip data-uk-icon="icon: move"></a>
+											<a href="#" class="uk-icon-link" title="Configuration" data-uk-tooltip data-uk-icon="icon: cog"></a>
+											<a href="#" class="uk-icon-link" title="Close" data-uk-tooltip data-uk-icon="icon: close"></a>
+										</div>
+									</div>
+								</div>
+								<div class="uk-card-body">
+									<div class="chart-container-2">
+										<canvas id="chart1"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /panel -->
+						<!-- panel -->
+						<div class="uk-width-1-1 uk-width-1-3@l uk-width-1-2@xl">
+							<div class="uk-card uk-card-default uk-card-small uk-card-hover">
+								<div class="uk-card-header">
+									<div class="uk-grid uk-grid-small">
+										<div class="uk-width-auto"><h4>Activity</h4></div>
+										<div class="uk-width-expand uk-text-right panel-icons">
+											<a href="#" class="uk-icon-link" title="Move" data-uk-tooltip data-uk-icon="icon: move"></a>
+											<a href="#" class="uk-icon-link" title="Configuration" data-uk-tooltip data-uk-icon="icon: cog"></a>
+											<a href="#" class="uk-icon-link" title="Close" data-uk-tooltip data-uk-icon="icon: close"></a>
+										</div>
+									</div>
+								</div>
+								<div class="uk-card-body">
+									<div class="chart-container">
+										<canvas id="chart3"></canvas>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -223,17 +261,18 @@
 							<div class="uk-card uk-card-default uk-card-small uk-card-hover">
 								<div class="uk-card-header">
 									<div class="uk-grid uk-grid-small">
-										<div class="uk-width-auto"><h4 class="uk-margin-remove-bottom">Activity</h4></div>
-										<div class="uk-width-expand uk-text-right">
-											<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="icon: move"></a>
-											<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="icon: cog"></a>
-											<a href="#" class="uk-icon-link" data-uk-icon="icon: close"></a>
+										<div class="uk-width-auto"><h4>Distribution Chart</h4></div>
+										<div class="uk-width-expand uk-text-right panel-icons">
+											<a href="#" class="uk-icon-link" title="Move" data-uk-tooltip data-uk-icon="icon: move"></a>
+											<a href="#" class="uk-icon-link" title="Configuration" data-uk-tooltip data-uk-icon="icon: cog"></a>
+											<a href="#" class="uk-icon-link" title="Close" data-uk-tooltip data-uk-icon="icon: close"></a>
 										</div>
 									</div>
 								</div>
 								<div class="uk-card-body">
-									<img src="img/mapa2.svg" alt="">
-									<p class="uk-text-muted uk-text-small uk-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<div class="chart-container">
+										<canvas id="chart4"></canvas>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -243,130 +282,18 @@
 							<div class="uk-card uk-card-default uk-card-small uk-card-hover">
 								<div class="uk-card-header">
 									<div class="uk-grid uk-grid-small">
-										<div class="uk-width-auto"><h4 class="uk-margin-remove-bottom">Conversions</h4></div>
-										<div class="uk-width-expand uk-text-right">
-											<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="icon: move"></a>
-											<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="icon: cog"></a>
-											<a href="#" class="uk-icon-link" data-uk-icon="icon: close"></a>
+										<div class="uk-width-auto"><h4>Population Chart</h4></div>
+										<div class="uk-width-expand uk-text-right panel-icons">
+											<a href="#" class="uk-icon-link" title="Move" data-uk-tooltip data-uk-icon="icon: move"></a>
+											<a href="#" class="uk-icon-link" title="Configuration" data-uk-tooltip data-uk-icon="icon: cog"></a>
+											<a href="#" class="uk-icon-link" title="Close" data-uk-tooltip data-uk-icon="icon: close"></a>
 										</div>
 									</div>
 								</div>
 								<div class="uk-card-body">
-									<img src="img/mapa3.svg" alt="">
-									<p class="uk-text-muted uk-text-small uk-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-								</div>
-							</div>
-						</div>
-						<!-- /panel -->
-						<!-- panel -->
-						<div class=" uk-width-2-3@l uk-width-1-2@xl">
-							<div class="uk-card uk-card-default uk-card-small uk-card-hover">
-								<div class="uk-card-header">
-									<div class="uk-grid uk-grid-small">
-										<div class="uk-width-auto"><h4 class="uk-margin-remove-bottom">Consectetur sit</h4></div>
-										<div class="uk-width-expand uk-text-right">
-											<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="icon: move"></a>
-											<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="icon: cog"></a>
-											<a href="#" class="uk-icon-link" data-uk-icon="icon: close"></a>
-										</div>
+									<div class="chart-container">
+										<canvas id="chart5"></canvas>
 									</div>
-								</div>
-								<div class="uk-card-body">
-									<div class="uk-overflow-auto">
-									<table class="uk-table uk-table-hover uk-table-divider uk-table-middle">
-										<thead>
-											<tr>
-												<th class="uk-table-shrink"></th>
-												<th>Name</th>
-												<th>Description</th>
-												<th>Date</th>
-												<th>Action</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><img src="https://picsum.photos/40/40/?random=1" alt="Alt text" class="uk-border-circle uk-preserve-width "></td>
-												<td>John Doe</td>
-												<td>Maecenas sagittis, massa nulla luctus mauris</td>
-												<td>11/09/18</td>
-												<td>
-													<a href="#" class="uk-icon-link uk-text-success" data-uk-icon="check"></a>
-													<a href="#" class="uk-icon-link uk-text-danger" data-uk-icon="close"></a>
-												</td>
-											</tr>
-											<tr>
-												<td><img src="https://picsum.photos/40/40/?random=2" alt="Alt text" class="uk-border-circle uk-preserve-width "></td>
-												<td>Larry Boile</td>
-												<td>Maecenas sagittis, dolor id posuere finibus, massa nulla luctus mauris</td>
-												<td>13/09/18</td>
-												<td>
-													<a href="#" class="uk-icon-link uk-text-success" data-uk-icon="check"></a>
-													<a href="#" class="uk-icon-link uk-text-danger" data-uk-icon="close"></a>
-												</td>
-											</tr>
-											<tr>
-												<td><img src="https://picsum.photos/40/40/?random=3" alt="Alt text" class="uk-border-circle uk-preserve-width "></td>
-												<td>Susan Lee</td>
-												<td>Sagittis, dolor id posuere finibus, massa nulla luctus mauris</td>
-												<td>18/09/18</td>
-												<td>
-													<a href="#" class="uk-icon-link uk-text-success" data-uk-icon="check"></a>
-													<a href="#" class="uk-icon-link uk-text-danger" data-uk-icon="close"></a>
-												</td>
-											</tr>
-											<tr>
-												<td><img src="https://picsum.photos/40/40/?random=4" alt="Alt text" class="uk-border-circle uk-preserve-width "></td>
-												<td>Jerry Thomas</td>
-												<td>Maecenas sagittis, dolor id posuere finibus, massa nulla luctus mauris</td>
-												<td>21/09/18</td>
-												<td>
-													<a href="#" class="uk-icon-link uk-text-success" data-uk-icon="check"></a>
-													<a href="#" class="uk-icon-link uk-text-danger" data-uk-icon="close"></a>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								</div>
-							</div>
-						</div>
-						<!-- /panel -->
-						<!-- panel -->
-						<div class="uk-width-1-2@s uk-width-1-2@l uk-width-1-4@xl">
-							<div class="uk-card uk-card-default uk-card-small uk-card-hover">
-								<div class="uk-card-header">
-									<div class="uk-grid uk-grid-small">
-										<div class="uk-width-auto"><h4 class="uk-margin-remove-bottom">Lorem ipsum</h4></div>
-										<div class="uk-width-expand uk-text-right">
-											<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="icon: move"></a>
-											<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="icon: cog"></a>
-											<a href="#" class="uk-icon-link" data-uk-icon="icon: close"></a>
-										</div>
-									</div>
-								</div>
-								<div class="uk-card-body">
-									<img src="img/mapa4.svg" alt="">
-									<p class="uk-text-muted uk-text-small uk-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-								</div>
-							</div>
-						</div>
-						<!-- /panel -->
-						<!-- panel -->
-						<div class="uk-width-1-2@s uk-width-1-2@l uk-width-1-4@xl">
-							<div class="uk-card uk-card-default uk-card-small uk-card-hover">
-								<div class="uk-card-header">
-									<div class="uk-grid uk-grid-small">
-										<div class="uk-width-auto"><h4 class="uk-margin-remove-bottom">Ipsum dolor</h4></div>
-										<div class="uk-width-expand uk-text-right">
-											<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="icon: move"></a>
-											<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="icon: cog"></a>
-											<a href="#" class="uk-icon-link" data-uk-icon="icon: close"></a>
-										</div>
-									</div>
-								</div>
-								<div class="uk-card-body">
-									<img src="img/mapa4.svg" alt="">
-									<p class="uk-text-muted uk-text-small uk-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 								</div>
 							</div>
 						</div>
@@ -374,7 +301,7 @@
 					</div>
 					<footer class="uk-section uk-section-small uk-text-center">
 						<hr>
-						<a href="https://github.com/zzseba78/Kick-Off">Created by KickOff</a> | Built with <a href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank" data-uk-tooltip><span data-uk-icon="uikit"></span></a>
+						<p class="uk-text-small uk-text-center">Copyright 2018 - <a href="https://github.com/zzseba78/Kick-Off">Created by KickOff</a> | Built with <a href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank" data-uk-tooltip><span data-uk-icon="uikit"></span></a> </p>
 					</footer>
 				</div>
 			</div>
@@ -406,8 +333,9 @@
 		</div>
 		
 		<!-- JS FILES -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
-		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+		<script src="assets/chartScripts.js"></script>
 	</body>
 </html>
