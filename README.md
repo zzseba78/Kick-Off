@@ -40,11 +40,11 @@ All used pictures are random images from https://picsum.photos/
 ### The Layouts
 At the moment these layouts are available ( more will be available soon! )
 
+<a href="https://zzseba78.github.io/Kick-Off/dashboard.html"><img src="img/dashboard.png" width="100%" alt=""></a>
+
 <a href="https://zzseba78.github.io/Kick-Off/cover.html"><img src="img/cover.png" width="100%" alt=""></a>
 
 <a href="https://zzseba78.github.io/Kick-Off/cards.html"><img src="img/cards.png" width="100%" alt=""></a>
-
-<a href="https://zzseba78.github.io/Kick-Off/dashboard.html"><img src="img/Dashboard.png" width="100%" alt=""></a>
 
 <a href="https://zzseba78.github.io/Kick-Off/newsBlog.html"><img src="img/Blog.png" width="100%" alt=""></a>
 
