@@ -176,8 +176,8 @@
   background-color: #32d296;
 }
 /* Charts */
-.chart-container, .chart-container-2 {
-	 position: relative;
-	 height: 300px;
-    margin: 0 auto;
+.chart-container {
+	position: relative;
+	height: 300px;
+	margin: 0 auto;
 }
