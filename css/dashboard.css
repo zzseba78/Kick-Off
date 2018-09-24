@@ -55,6 +55,21 @@
 	max-width: 160px;
 	padding: 0.75rem;
 }
+/* Drop arrow */
+#left-col .uk-dropdown.user-drop:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 4px;
+	margin-left: -4px;
+}
 .left-content-box {
 	padding: 0.75rem 20px;
 	border-top: 1px solid rgba(255,255,255,0.06);
