@@ -29,10 +29,6 @@ The `uikit.min.js` file is the minified latest version of UIKit 3 ( currently 3.
 
 The `data-uk-*` syntax it´s used in order to work with every library and get html code validated.
 
-### Components
-
-All used components from UIkit 3 used in each layout are listed in order to know what is required.
-
 ### Images
 
 All used pictures are random images from https://picsum.photos/
