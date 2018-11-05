@@ -10,7 +10,7 @@
 .uk-navbar-item,
 .uk-navbar-toggle {
 	/* navbar height */
-  height: 52px;
+  min-height: 52px;
   padding: 0 8px;
   font-size: 0.85rem;
 }
