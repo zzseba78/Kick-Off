@@ -1,5 +1,5 @@
 <img src="https://zzseba78.github.io/Kick-Off/img/kickOff-logo.svg" width="280px" alt="KickOff">
-<img src="img/100.png" width="100%" alt="">
+<img src="img/200.png" width="100%" alt="">
 
 #### UIkit 3 Starter Layout / Templates for your UIKit 3 project.
 <hr>
