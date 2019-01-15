@@ -42,17 +42,17 @@ At the moment these layouts are available ( more will be available soon! )
 
 <a href="https://zzseba78.github.io/Kick-Off/cards.html"><img src="img/cards.png" width="100%" alt=""></a>
 
-<a href="https://zzseba78.github.io/Kick-Off/newsBlog.html"><img src="img/Blog.png" width="100%" alt=""></a>
+<a href="https://zzseba78.github.io/Kick-Off/newsBlog.html"><img src="img/blog.png" width="100%" alt=""></a>
 
-<a href="https://zzseba78.github.io/Kick-Off/article.html"><img src="img/Article.png" width="100%" alt=""></a>
+<a href="https://zzseba78.github.io/Kick-Off/article.html"><img src="img/article.png" width="100%" alt=""></a>
 
-<a href="https://zzseba78.github.io/Kick-Off/price.html"><img src="img/Price.png" width="100%" alt=""></a>
+<a href="https://zzseba78.github.io/Kick-Off/price.html"><img src="img/price.png" width="100%" alt=""></a>
 
-<a href="https://zzseba78.github.io/Kick-Off/album.html"><img src="img/Album.png" width="100%" alt=""></a>
+<a href="https://zzseba78.github.io/Kick-Off/album.html"><img src="img/album.png" width="100%" alt=""></a>
 
-<a href="https://zzseba78.github.io/Kick-Off/login-dark.html"><img src="img/LoginDark.png" width="100%" alt=""></a>
+<a href="https://zzseba78.github.io/Kick-Off/login-dark.html"><img src="img/loginDark.png" width="100%" alt=""></a>
 
-<a href="https://zzseba78.github.io/Kick-Off/login.html"><img src="img/Login.png" width="100%" alt=""></a>
+<a href="https://zzseba78.github.io/Kick-Off/login.html"><img src="img/login.png" width="100%" alt=""></a>
 
 
 ####  License
