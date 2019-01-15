@@ -56,7 +56,7 @@ At the moment these layouts are available ( more will be available soon! )
 
 
 ####  License
-2018 byHumans under the [MIT license](LICENSE).
+2019 byHumans under the [MIT license](LICENSE).
 
 ---
 
