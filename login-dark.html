@@ -6,27 +6,40 @@
 		<title>Login - UIkit 3 KickOff</title>
 		<link rel="icon" href="img/favicon.ico">
 		<!-- CSS FILES -->
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/css/uikit.min.css">
 	</head>
-	<body class="uk-height-1-1">
-		<div class="uk-flex uk-flex-center uk-flex-middle uk-background-secondary uk-height-viewport uk-light">
+	<body class="uk-height-1-1 uk-cover-container uk-background-secondary">
+		
+		<img srcset="https://picsum.photos/640/700/?image=1044 640w,
+		             https://picsum.photos/960/700/?image=1044 960w,
+		             https://picsum.photos/1200/900/?image=1044 1200w,
+		             https://picsum.photos/2000/1000/?image=1044 2000w"
+		     sizes="100vw"
+		     src="https://picsum.photos/1200/900/?image=1044" alt="" uk-cover uk-img
+		>
+
+		<div class="uk-position-cover uk-overlay-primary"></div>
+		
+		<div class="uk-flex uk-flex-center uk-flex-middle uk-height-viewport uk-light uk-position-relative uk-position-z-index">
 			<div class="uk-position-bottom-center uk-position-small uk-visible@m">
 				<span class="uk-text-small uk-text-muted">© 2018 Company Name - <a href="https://github.com/zzseba78/Kick-Off">Created by KickOff</a> | Built with <a href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank" data-uk-tooltip><span data-uk-icon="uikit"></span></a></span>
 			</div>
 			<div class="uk-width-medium uk-padding-small">
+				<div class="uk-text-center uk-margin">
+					<img src="img/login-logo.svg" alt="Logo">
+				</div>
 				<form action="login-dark.html">
 					<fieldset class="uk-fieldset">
-						<legend class="uk-legend">Login</legend>
 						<div class="uk-margin">
 							<div class="uk-inline uk-width-1-1">
 								<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
-								<input class="uk-input uk-form-large" required placeholder="Username" type="text">
+								<input class="uk-input uk-border-pill" required placeholder="Username" type="text">
 							</div>
 						</div>
 						<div class="uk-margin">
 							<div class="uk-inline uk-width-1-1">
 								<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
-								<input class="uk-input uk-form-large" required placeholder="Password" type="password">
+								<input class="uk-input uk-border-pill" required placeholder="Password" type="password">
 							</div>
 						</div>
 						
@@ -34,7 +47,7 @@
 							<label><input class="uk-checkbox" type="checkbox"> Keep me logged in</label>
 						</div>
 						<div class="uk-margin">
-							<button type="submit" class="uk-button uk-button-primary uk-button-primary uk-button-large uk-width-1-1">LOG IN</button>
+							<button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">LOG IN</button>
 						</div>
 					</fieldset>
 				</form>
@@ -48,11 +61,11 @@
 							<div class="uk-margin-small">
 								<div class="uk-inline uk-width-1-1">
 									<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: mail"></span>
-									<input class="uk-input" placeholder="E-mail" required type="text">
+									<input class="uk-input uk-border-pill" placeholder="E-mail" required type="text">
 								</div>
 							</div>
 							<div class="uk-margin-small">
-								<button type="submit" class="uk-button uk-button-primary uk-button-primary uk-width-1-1">SEND PASSWORD</button>
+								<button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">SEND PASSWORD</button>
 							</div>
 							
 						</form>
@@ -62,7 +75,7 @@
 		</div>
 		
 		<!-- JS FILES -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit-icons.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/js/uikit.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/js/uikit-icons.min.js"></script>
 	</body>
 </html>
