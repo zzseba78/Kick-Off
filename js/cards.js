@@ -1,5 +1,6 @@
-var search = document.querySelector('.search-fld');
-var searchVal = document.querySelector('.search-filter');
+var search = UIkit.util.$('.search-fld');
+var searchVal = UIkit.util.$('.search-filter');
+var filterBtn = UIkit.util.$$('li[data-uk-filter-control] a');
 var debounce;
 
 search.addEventListener('keyup', function(e) {
@@ -10,8 +11,7 @@ search.addEventListener('keyup', function(e) {
 		var searchTerm = '';
 
 		if (value.length) searchTerm = '[data-tags*="' + finalValue + '"]';
-
-		searchVal.setAttribute('data-uk-filter-control', searchTerm);
+		UIkit.util.attr(searchVal, 'data-uk-filter-control', searchTerm);
 		searchVal.click();
 	}, 300);
 });
@@ -24,3 +24,16 @@ document.getElementById("search-form").onkeypress = function(e) {
 		e.preventDefault();
 	}
 }
+
+// empty field on click filter
+UIkit.util.on(filterBtn, 'click', function(){
+	var inputVal = search.value;
+	if (inputVal.length) {
+		// empty field
+		search.value = '';
+		searchTerm = '[data-tags*=""]';
+		// empty attribute
+		UIkit.util.attr(searchVal, 'data-uk-filter-control', searchTerm);
+		console.log('empty field and value');
+	}
+});
