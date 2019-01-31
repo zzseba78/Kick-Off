@@ -1,9 +1,10 @@
 var search = UIkit.util.$('.search-fld');
 var searchVal = UIkit.util.$('.search-filter');
 var filterBtn = UIkit.util.$$('li[data-uk-filter-control] a');
+var formEl = UIkit.util.$('#search-form');
 var debounce;
 
-search.addEventListener('keyup', function(e) {
+UIkit.util.on(search, 'keyup', function() {
 	clearTimeout(debounce);
 	debounce = setTimeout(function() {
 		var value = search.value;
@@ -17,16 +18,16 @@ search.addEventListener('keyup', function(e) {
 });
 
 // prevent send for on click enter
-document.getElementById("search-form").onkeypress = function(e) {
+UIkit.util.on(formEl, 'keypress', function(e) {
 	var key = e.charCode || e.keyCode || 0;
 	if (key == 13) {
-		console.log('Prevent submit on hit enter');
+		console.log('Prevent submit on press enter');
 		e.preventDefault();
 	}
-}
+});
 
 // empty field on click filter
-UIkit.util.on(filterBtn, 'click', function(){
+UIkit.util.on(filterBtn, 'click', function() {
 	var inputVal = search.value;
 	if (inputVal.length) {
 		// empty field
@@ -34,6 +35,6 @@ UIkit.util.on(filterBtn, 'click', function(){
 		searchTerm = '[data-tags*=""]';
 		// empty attribute
 		UIkit.util.attr(searchVal, 'data-uk-filter-control', searchTerm);
-		console.log('empty field and value');
+		console.log('empty field and attribute');
 	}
 });
