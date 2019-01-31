@@ -10,7 +10,7 @@ search.addEventListener('keyup', function() {
     
     if(value.length) searchTerm = '[data-tags*="' + search.value + '"]';
     
-    searchVal.setAttribute('uk-filter-control', searchTerm);
+    searchVal.setAttribute('data-uk-filter-control', searchTerm);
     searchVal.click();
   }, 300);
 });
