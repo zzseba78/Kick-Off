@@ -154,3 +154,10 @@ img[data-src][src*='data:image'] { background: rgba(0,0,0,0.1); }
 	line-height: 1.3rem;
 	padding: 0.5rem 0;
 }
+.uk-notification-message {
+	background-color: #1e87f0;
+	color:  white;
+	font-size: 0.9rem;
+	border-radius: 3px;
+	box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
