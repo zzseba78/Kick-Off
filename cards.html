@@ -946,6 +946,11 @@
 		<!-- JS FILES -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
-		<script src="js/cards.js"></script>		
+		<script src="js/cards.js"></script>	
+		<script>
+			setTimeout(function(){
+				UIkit.notification('<span data-uk-icon="search"></span> Now you can filter cards typing on search', {status:'success'});
+			}, 1000);
+		</script>	
 	</body>
 </html>
