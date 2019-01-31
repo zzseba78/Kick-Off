@@ -6,9 +6,10 @@ search.addEventListener('keyup', function(e) {
 	clearTimeout(debounce);
 	debounce = setTimeout(function() {
 		var value = search.value;
+		var finalValue = value.toLowerCase();
 		var searchTerm = '';
 
-		if (value.length) searchTerm = '[data-tags*="' + search.value + '"]';
+		if (value.length) searchTerm = '[data-tags*="' + finalValue + '"]';
 
 		searchVal.setAttribute('data-uk-filter-control', searchTerm);
 		searchVal.click();
