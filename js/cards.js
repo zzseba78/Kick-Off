@@ -17,16 +17,16 @@ UIkit.util.on(search, 'keyup', function() {
 	}, 300);
 });
 
-// prevent send for on click enter
+// prevent send form on press enter
 UIkit.util.on(formEl, 'keypress', function(e) {
 	var key = e.charCode || e.keyCode || 0;
 	if (key == 13) {
-		console.log('Prevent submit on press enter');
 		e.preventDefault();
+		console.log('Prevent submit on press enter');
 	}
 });
 
-// empty field on click filter
+// empty field and attribute on click filter button
 UIkit.util.on(filterBtn, 'click', function() {
 	var inputVal = search.value;
 	if (inputVal.length) {
