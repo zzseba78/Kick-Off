@@ -19,7 +19,7 @@
 						<a href="#" class="uk-logo" title=""><img src="img/logo.svg" alt=""></a>
 					</div>
 					<div class="uk-width-expand">
-						<form action="cards.html">
+						<form id="search-form" action="">
 							<div class="uk-inline uk-width-1-1">
 								<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: search"></span>
 								<input class="uk-input uk-width-1-1 search-fld" type="text" placeholder="Type your search">
@@ -949,7 +949,7 @@
 		<script src="js/cards.js"></script>	
 		<script>
 			setTimeout(function(){
-				UIkit.notification('<span data-uk-icon="search"></span> Now you can filter cards typing on search');
+				UIkit.notification('<span data-uk-icon="search"></span> Now you can filter cards typing on search', {status:'success'});
 			}, 1000);
 		</script>	
 	</body>
