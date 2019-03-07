@@ -23,7 +23,10 @@
 	min-height: 460px;
 	transition: height 0.25s;
 }
-
+.uk-subnav-pill > * > :first-child {
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.04);
+}
 .top-container {
 	z-index: 2;
 }
