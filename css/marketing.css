@@ -1,0 +1,50 @@
+.nav {
+	position: absolute;
+	top: 15px;
+	z-index: 99;
+	left: 0;
+	right: 0;
+}
+.uk-sticky-placeholder {
+	height: 0 !important;
+}
+.top-wrap::before, .overlay-wrap::before {
+	position: absolute;
+	top:0;
+	right:0;
+	left: 0;
+	bottom: 0;
+	content: '';
+	z-index: 1;
+	background-color: rgba(0,0,0,0.5);
+}
+.top-wrap-height {
+	height: 75vh;
+	min-height: 450px;
+	transition: height 0.25s;
+}
+
+.top-container {
+	z-index: 2;
+}
+.uk-logo img {
+	height: 40px;
+}
+.subtitle-text {
+	font-size: 1.2em;
+	opacity: 0.7;
+	font-weight: 300;
+}
+.logos-grid img {
+	display: block;
+	width: 60px;
+	margin: 0 auto;
+	filter:  grayscale(100%);
+	transition: filter 0.25s;
+}
+.logos-grid img:hover {
+	display: block;
+	width: 60px;
+	margin: 0 auto;
+	filter:  grayscale(0);
+}
