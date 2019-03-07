@@ -32,6 +32,8 @@ All used pictures are random images from https://picsum.photos/
 ### The Layouts
 At the moment these layouts are available ( more will be available soon! )
 
+<a href="https://zzseba78.github.io/Kick-Off/marketing.html"><img src="img/marketing.png" width="100%" alt=""></a>
+
 <a href="https://zzseba78.github.io/Kick-Off/login-dark.html"><img src="img/loginDark2.png" width="100%" alt=""></a>
 
 <a href="https://zzseba78.github.io/Kick-Off/dashboard.html"><img src="img/dashboard.png" width="100%" alt=""></a>
