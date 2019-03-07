@@ -19,8 +19,8 @@
 	background-color: rgba(0,0,0,0.5);
 }
 .top-wrap-height {
-	height: 75vh;
-	min-height: 450px;
+	height: 80vh;
+	min-height: 460px;
 	transition: height 0.25s;
 }
 
