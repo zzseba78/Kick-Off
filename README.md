@@ -25,9 +25,11 @@ The `uikit.min.js` file is the minified latest version of UIKit 3 ( currently 3.
 
 The `data-uk-*` syntax it´s used in order to work with every library and get html code validated.
 
-### Images
+### Images and Graphics
 
 All used pictures are random images from https://picsum.photos/
+Svg logos are from https://svgporn.com/
+Svg illustrations are from https://undraw.co/illustrations
 
 ### The Layouts
 At the moment these layouts are available ( more will be available soon! )
