@@ -27,9 +27,9 @@ The `data-uk-*` syntax it´s used in order to work with every library and get ht
 
 ### Images and Graphics
 
-All used pictures are random images from https://picsum.photos/
-Svg logos are from https://svgporn.com/
-Svg illustrations are from https://undraw.co/illustrations
+- All used pictures are random images from https://picsum.photos/
+- Svg logos are from https://svgporn.com/
+- Svg illustrations are from https://undraw.co/illustrations
 
 ### The Layouts
 At the moment these layouts are available ( more will be available soon! )
