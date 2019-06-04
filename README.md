@@ -1,5 +1,9 @@
 <img src="https://zzseba78.github.io/Kick-Off/img/kickOff-logo.svg" width="280px" alt="KickOff">
-<img src="img/200.png" width="100%" alt="">
+
+### Support Open Source. Buy beer.
+If you're using KickOff and find it useful you can buy me a beer
+
+[![Beerpay](https://beerpay.io/zzseba78/Kick-Off/badge.svg?style=beer-square)](https://beerpay.io/zzseba78/Kick-Off)  [![Beerpay](https://beerpay.io/zzseba78/Kick-Off/make-wish.svg?style=flat-square)](https://beerpay.io/zzseba78/Kick-Off?focus=wish)
 
 #### UIkit 3 Starter Layout / Templates for your UIKit 3 project.
 <hr>
@@ -12,7 +16,7 @@ The main goal of KickOff is to <strong>quickly get you started on your project</
 
 All the layouts are based on default UIkit styles to keeps things clean and simple, but some layouts may use some custom css code.
 
-The css styles are the minified latest version of UIKit 3 ( currently 3.0.2 ) from the cdn.
+The css styles are the minified latest version of UIKit 3 ( currently 3.1.5 ) from the cdn.
 
 ### HTML
 The code try to be as simple as possible, with commented sections, <strong>validated and semantic</strong> html5 markup.
@@ -21,7 +25,7 @@ The code try to be as simple as possible, with commented sections, <strong>valid
 
 Since UIkit 3 removed JQuery dependancy, it´s not included. All JS implementations are created by adding `data-uk-*` attributes to the HTML elements. No additional JS lines are added.
 
-The `uikit.min.js` file is the minified latest version of UIKit 3 ( currently 3.0.2 ) from the cdn. 
+The `uikit.min.js` file is the minified latest version of UIKit 3 ( currently 3.1.5 ) from the cdn. 
 
 The `data-uk-*` syntax it´s used in order to work with every library and get html code validated.
 
