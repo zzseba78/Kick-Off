@@ -1,5 +1,5 @@
 <img src="https://zzseba78.github.io/Kick-Off/img/kickOff-logo.svg" width="280px" alt="KickOff">
-
+<hr>
 ### Support Open Source. Buy beer.
 If you're using KickOff and find it useful you can buy me a beer! 😄
 
