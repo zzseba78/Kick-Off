@@ -2,7 +2,7 @@
 <img src="img/200.png" width="100%" alt="">
 
 ## Support Open Source. Buy beer.
-If you're using KickOff and want to support the development, buy me a beer
+If you're using KickOff and find it useful you can buy me a beer
 
 [![Beerpay](https://beerpay.io/zzseba78/Kick-Off/badge.svg?style=beer-square)](https://beerpay.io/zzseba78/Kick-Off)  [![Beerpay](https://beerpay.io/zzseba78/Kick-Off/make-wish.svg?style=flat-square)](https://beerpay.io/zzseba78/Kick-Off?focus=wish)
 
