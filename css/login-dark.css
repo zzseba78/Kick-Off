@@ -1,0 +1,27 @@
+/* Background Image Media Queries */
+body.login {
+	background-image: url('https://picsum.photos/640/700/?image=1044');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@media screen and (min-width: 640px){
+	body.login {
+		background-image: url('https://picsum.photos/960/700/?image=1044');
+	}
+}	
+@media screen and (min-width: 960px){
+	body.login {
+		background-image: url('https://picsum.photos/1200/900/?image=1044');
+	}
+}	
+@media screen and (min-width: 1200px){
+	body.login {
+		background-image: url('https://picsum.photos/1600/950/?image=1044');
+	}
+}	
+@media screen and (min-width: 1600px){
+	body.login {
+		background-image: url('https://picsum.photos/2000/1050/?image=1044');
+	}
+}
