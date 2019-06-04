@@ -1,6 +1,11 @@
 <img src="https://zzseba78.github.io/Kick-Off/img/kickOff-logo.svg" width="280px" alt="KickOff">
 <img src="img/200.png" width="100%" alt="">
 
+## Support Open Source. Buy beer.
+If you're using KickOff and want to support the development, buy me a beer
+
+[![Beerpay](https://beerpay.io/zzseba78/Kick-Off/badge.svg?style=beer-square)](https://beerpay.io/zzseba78/Kick-Off)  [![Beerpay](https://beerpay.io/zzseba78/Kick-Off/make-wish.svg?style=flat-square)](https://beerpay.io/zzseba78/Kick-Off?focus=wish)
+
 #### UIkit 3 Starter Layout / Templates for your UIKit 3 project.
 <hr>
 
@@ -69,8 +74,3 @@ At the moment these layouts are available ( more will be available soon! )
 </p>
 
 ---
-
-## Support on Beerpay
-Hey dude! Help me out for a couple of :beers:!
-
-[![Beerpay](https://beerpay.io/zzseba78/Kick-Off/badge.svg?style=beer-square)](https://beerpay.io/zzseba78/Kick-Off)  [![Beerpay](https://beerpay.io/zzseba78/Kick-Off/make-wish.svg?style=flat-square)](https://beerpay.io/zzseba78/Kick-Off?focus=wish)
