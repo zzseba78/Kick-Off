@@ -9,7 +9,7 @@ If you're using KickOff and find it useful you can buy me a beer! 😄
 
 <hr>
 
-#### UIkit 3 Starter Layout / Templates for your UIKit 3 project.
+## UIkit 3 Starter Layout / Templates for your UIKit 3 project.
 
 
 ### Goals
