@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - UIkit 3 KickOff</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- CSS FILES -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/uikit@latest/dist/css/uikit.min.css">
+  <link rel="stylesheet" type="text/css" href="css/dashboard-minimalist.css">
+</head>
+
+<body>
+
+  <!-- LEFT BAR -->
+  <aside id="sidenav-col" class="uk-visible@s uk-height-viewport uk-padding-vertical uk-padding-small sidebar-left">
+    <div>
+      <div class="uk-logo uk-text-center uk-margin-small-top uk-margin-bottom">
+        <svg width="28" height="34" viewBox="0 0 28 34" xmlns="http://www.w3.org/2000/svg"
+          class="uk-margin-small-right uk-svg">
+          <polygon fill="#fff" points="19.1,4.1 13.75,1 8.17,4.45 13.6,7.44 "></polygon>
+          <path fill="#fff"
+            d="M21.67,5.43l-5.53,3.34l6.26,3.63v9.52l-8.44,4.76L5.6,21.93v-7.38L0,11.7v13.51l13.75,8.08L28,25.21V9.07 L21.67,5.43z">
+          </path>
+        </svg>
+      </div>
+      <hr>
+    </div>
+    <div class="uk-flex uk-flex-between uk-flex-column menu" uk-height-viewport="expand: true">
+      <ul class="uk-nav uk-nav-default uk-text-center">
+        <li class="uk-active">
+          <a href="#">
+            <!--<span uk-icon="icon: user; ratio: 1.2"></span> -->
+            <i data-feather="user"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!-- <span uk-icon="icon: grid; ratio: 1.2"></span> -->
+            <i data-feather="grid"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!-- <span uk-icon="icon: github; ratio: 1.2"></span> -->
+            <i data-feather="github"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="uk-position-bottom logout-block">
+        <ul class="uk-nav uk-nav-default uk-text-center uk-margin-bottom">
+          <li>
+            <a href="#" class="uk-text-muted">
+              <!-- <span uk-icon="icon: settings; ratio: 1.2"></span> -->
+              <i data-feather="settings"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- /LEFT BAR -->
+  <div class="main">
+    <header
+      uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+      <nav class="uk-navbar-container uk-margin uk-padding uk-padding-remove-vertical" uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+          <div class="uk-navbar-item uk-padding-remove">
+            <div class="uk-hidden@s uk-margin-large-right">
+              <a uk-navbar-toggle-icon="" href="#offcanvas-sidebar" uk-toggle=""
+                class="uk-navbar-toggle uk-icon uk-navbar-toggle-icon"></a>
+              <div class="mobile">
+                <a href="" class="uk-icon-close" uk-icon="icon: close; ratio: 1.2"></a>
+              </div>
+            </div>
+            <form class="uk-search uk-search-navbar uk-width-auto">
+              <span uk-search-icon></span>
+              <input class="uk-search-input" type="search" placeholder="Search...">
+            </form>
+          </div>
+
+        </div>
+        <div class="uk-navbar-right">
+          <div class="uk-navbar-item">
+            <div class="avatar-icon">
+              <a href="">
+                <img src="img/avatar.svg" alt="">
+              </a>
+              <div uk-dropdown="mode: click">
+                <ul class="uk-nav uk-dropdown-nav">
+                  <li class="uk-active"><a href="#">Profile</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#" class="" uk-text-danger>logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="uk-position-relative uk-padding uk-padding-remove-vertical">
+
+      <!-- CONTENT -->
+      <div>
+        <div
+          class="uk-grid uk-grid-divider uk-grid-medium uk-child-width-1-2 uk-child-width-1-4@l uk-child-width-1-5@xl"
+          data-uk-grid>
+          <div>
+            <span class="uk-text-small"><span data-uk-icon="icon:users"
+                class="uk-margin-small-right uk-text-primary"></span>New Users</span>
+            <h1 class="uk-heading-primary uk-margin-remove  uk-text-primary">2.134</h1>
+            <div class="uk-text-small">
+              <span class="uk-text-success" data-uk-icon="icon: triangle-up">15%</span> more than last week.
+            </div>
+          </div>
+          <div>
+
+            <span class="uk-text-small"><span data-uk-icon="icon:social"
+                class="uk-margin-small-right uk-text-primary"></span>Social Media</span>
+            <h1 class="uk-heading-primary uk-margin-remove uk-text-primary">8.490</h1>
+            <div class="uk-text-small">
+              <span class="uk-text-warning" data-uk-icon="icon: triangle-down">-15%</span> less than last week.
+            </div>
+
+          </div>
+          <div>
+
+            <span class="uk-text-small"><span data-uk-icon="icon:clock"
+                class="uk-margin-small-right uk-text-primary"></span>Traffic hours</span>
+            <h1 class="uk-heading-primary uk-margin-remove uk-text-primary">12.00<small class="uk-text-small">PM</small>
+            </h1>
+            <div class="uk-text-small">
+              <span class="uk-text-success" data-uk-icon="icon: triangle-up"> 19%</span> more than last week.
+            </div>
+
+          </div>
+          <div>
+
+            <span class="uk-text-small"><span data-uk-icon="icon:search"
+                class="uk-margin-small-right uk-text-primary"></span>Week Search</span>
+            <h1 class="uk-heading-primary uk-margin-remove uk-text-primary">9.543</h1>
+            <div class="uk-text-small">
+              <span class="uk-text-danger" data-uk-icon="icon: triangle-down"> -23%</span> less than last week.
+            </div>
+
+          </div>
+          <div class="uk-visible@xl">
+            <span class="uk-text-small"><span data-uk-icon="icon:users"
+                class="uk-margin-small-right uk-text-primary"></span>Lorem ipsum</span>
+            <h1 class="uk-heading-primary uk-margin-remove uk-text-primary">5.284</h1>
+            <div class="uk-text-small">
+              <span class="uk-text-success" data-uk-icon="icon: triangle-up"> 7%</span> more than last week.
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="uk-grid uk-grid-medium" data-uk-grid uk-sortable="handle: .sortable-icon">
+
+          <!-- panel -->
+          <div class="uk-width-1-2@l">
+            <div class="uk-card uk-card-default uk-card-small uk-card-hover">
+              <div class="uk-card-header">
+                <div class="uk-grid uk-grid-small">
+                  <div class="uk-width-auto">
+                    <h4>Content Table</h4>
+                  </div>
+                  <div class="uk-width-expand uk-text-right panel-icons">
+                    <a href="#" class="uk-icon-link sortable-icon" title="Move" data-uk-tooltip
+                      data-uk-icon="icon: move"></a>
+                    <a href="#" class="uk-icon-link" title="Configuration" data-uk-tooltip data-uk-icon="icon: cog"></a>
+                    <a href="#" class="uk-icon-link" title="Close" data-uk-tooltip data-uk-icon="icon: close"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-card-body">
+                <div>
+                  <table class="uk-table uk-table-striped">
+                    <thead>
+                      <tr>
+                        <th>Table Heading</th>
+                        <th>Table Heading</th>
+                        <th>Table Heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Table Data</td>
+                        <td>Table Data</td>
+                        <td>Table Data</td>
+                      </tr>
+                      <tr>
+                        <td>Table Data</td>
+                        <td>Table Data</td>
+                        <td>Table Data</td>
+                      </tr>
+                      <tr>
+                        <td>Table Data</td>
+                        <td>Table Data</td>
+                        <td>Table Data</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /panel -->
+          <!-- panel -->
+          <div class="uk-width-1-2@l">
+            <div class="uk-card ">
+              <div class="uk-card-header">
+                <div class="uk-grid uk-grid-small">
+                  <div class="uk-width-auto">
+                    <h4>Cards Content</h4>
+                  </div>
+                  <div class="uk-width-expand uk-text-right panel-icons">
+                    <a href="#" class="uk-icon-link sortable-icon" title="Move" data-uk-tooltip
+                      data-uk-icon="icon: move"></a>
+                    <a href="#" class="uk-icon-link" title="Configuration" data-uk-tooltip data-uk-icon="icon: cog"></a>
+                    <a href="#" class="uk-icon-link" title="Close" data-uk-tooltip data-uk-icon="icon: close"></a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                  <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                      <h3 class="uk-card-title">Default</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-card uk-card-primary uk-card-body">
+                      <h3 class="uk-card-title">Primary</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                      <h3 class="uk-card-title">Secondary</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /panel -->
+          <!-- panel -->
+          <div class="uk-width-1-1 uk-width-1-3@l uk-width-1-2@xl">
+            <div class="uk-card uk-card-default uk-card-small uk-card-hover">
+              <div class="uk-card-header">
+                <div class="uk-grid uk-grid-small">
+                  <div class="uk-width-auto">
+                    <h4>Activity Chart</h4>
+                  </div>
+                  <div class="uk-width-expand uk-text-right panel-icons">
+                    <a href="#" class="uk-icon-link sortable-icon" title="Move" data-uk-tooltip
+                      data-uk-icon="icon: move"></a>
+                    <a href="#" class="uk-icon-link" title="Configuration" data-uk-tooltip data-uk-icon="icon: cog"></a>
+                    <a href="#" class="uk-icon-link" title="Close" data-uk-tooltip data-uk-icon="icon: close"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-card-body">
+                <div>
+                  <canvas id="chart3"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /panel -->
+          <!-- panel -->
+          <div class="uk-width-1-1">
+            <div class="uk-card uk-card-default uk-card-small uk-card-hover">
+              <div class="uk-card-header">
+                <div class="uk-grid uk-grid-small">
+                  <div class="uk-width-auto">
+                    <h4>Icons List</h4>
+                  </div>
+                  <div class="uk-width-expand uk-text-right panel-icons">
+                    <a href="#" class="uk-icon-link sortable-icon" title="Move" data-uk-tooltip
+                      data-uk-icon="icon: move"></a>
+                    <a href="#" class="uk-icon-link" title="Configuration" data-uk-tooltip data-uk-icon="icon: cog"></a>
+                    <a href="#" class="uk-icon-link" title="Close" data-uk-tooltip data-uk-icon="icon: close"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-card-body">
+                <div class="chart-container">
+                  <div class="uk-child-width-1-3@s uk-grid" uk-grid="">
+                    <div class="uk-first-column">
+                      <ul class="uk-list">
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="home"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polygon points="18.65 11.35 10 2.71 1.35 11.35 0.65 10.65 10 1.29 19.35 10.65"></polygon>
+                              <polygon points="15 4 18 4 18 7 17 7 17 5 15 5"></polygon>
+                              <polygon
+                                points="3 11 4 11 4 18 7 18 7 12 12 12 12 18 16 18 16 11 17 11 17 19 11 19 11 13 8 13 8 19 3 19">
+                              </polygon>
+                            </svg></span> home</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="sign-in"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polygon points="7 2 17 2 17 17 7 17 7 16 16 16 16 3 7 3"></polygon>
+                              <polygon points="9.1 13.4 8.5 12.8 11.28 10 4 10 4 9 11.28 9 8.5 6.2 9.1 5.62 13 9.5">
+                              </polygon>
+                            </svg></span> sign-in</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="sign-out"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polygon points="13.1 13.4 12.5 12.8 15.28 10 8 10 8 9 15.28 9 12.5 6.2 13.1 5.62 17 9.5">
+                              </polygon>
+                              <polygon points="13 2 3 2 3 17 13 17 13 16 4 16 4 3 13 3"></polygon>
+                            </svg></span> sign-out</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="user"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.9" cy="6.4" r="4.4"></circle>
+                              <path fill="none" stroke="#000" stroke-width="1.1"
+                                d="M1.5,19 C2.3,14.5 5.8,11.2 10,11.2 C14.2,11.2 17.7,14.6 18.5,19.2"></path>
+                            </svg></span> user</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="users"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle fill="none" stroke="#000" stroke-width="1.1" cx="7.7" cy="8.6" r="3.5"></circle>
+                              <path fill="none" stroke="#000" stroke-width="1.1"
+                                d="M1,18.1 C1.7,14.6 4.4,12.1 7.6,12.1 C10.9,12.1 13.7,14.8 14.3,18.3"></path>
+                              <path fill="none" stroke="#000" stroke-width="1.1"
+                                d="M11.4,4 C12.8,2.4 15.4,2.8 16.3,4.7 C17.2,6.6 15.7,8.9 13.6,8.9 C16.5,8.9 18.8,11.3 19.2,14.1">
+                              </path>
+                            </svg></span> users</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="lock"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <rect fill="none" stroke="#000" height="10" width="13" y="8.5" x="3.5"></rect>
+                              <path fill="none" stroke="#000"
+                                d="M6.5,8 L6.5,4.88 C6.5,3.01 8.07,1.5 10,1.5 C11.93,1.5 13.5,3.01 13.5,4.88 L13.5,8">
+                              </path>
+                            </svg></span> lock</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="unlock"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <rect fill="none" stroke="#000" x="3.5" y="8.5" width="13" height="10"></rect>
+                              <path fill="none" stroke="#000"
+                                d="M6.5,8.5 L6.5,4.9 C6.5,3 8.1,1.5 10,1.5 C11.9,1.5 13.5,3 13.5,4.9"></path>
+                            </svg></span> unlock</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="settings"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <ellipse fill="none" stroke="#000" cx="6.11" cy="3.55" rx="2.11" ry="2.15"></ellipse>
+                              <ellipse fill="none" stroke="#000" cx="6.11" cy="15.55" rx="2.11" ry="2.15"></ellipse>
+                              <circle fill="none" stroke="#000" cx="13.15" cy="9.55" r="2.15"></circle>
+                              <rect x="1" y="3" width="3" height="1"></rect>
+                              <rect x="10" y="3" width="8" height="1"></rect>
+                              <rect x="1" y="9" width="8" height="1"></rect>
+                              <rect x="15" y="9" width="3" height="1"></rect>
+                              <rect x="1" y="15" width="3" height="1"></rect>
+                              <rect x="10" y="15" width="8" height="1"></rect>
+                            </svg></span> settings</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="cog"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle fill="none" stroke="#000" cx="9.997" cy="10" r="3.31"></circle>
+                              <path fill="none" stroke="#000"
+                                d="M18.488,12.285 L16.205,16.237 C15.322,15.496 14.185,15.281 13.303,15.791 C12.428,16.289 12.047,17.373 12.246,18.5 L7.735,18.5 C7.938,17.374 7.553,16.299 6.684,15.791 C5.801,15.27 4.655,15.492 3.773,16.237 L1.5,12.285 C2.573,11.871 3.317,10.999 3.317,9.991 C3.305,8.98 2.573,8.121 1.5,7.716 L3.765,3.784 C4.645,4.516 5.794,4.738 6.687,4.232 C7.555,3.722 7.939,2.637 7.735,1.5 L12.263,1.5 C12.072,2.637 12.441,3.71 13.314,4.22 C14.206,4.73 15.343,4.516 16.225,3.794 L18.487,7.714 C17.404,8.117 16.661,8.988 16.67,10.009 C16.672,11.018 17.415,11.88 18.488,12.285 L18.488,12.285 Z">
+                              </path>
+                            </svg></span> cog</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="nut"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polygon fill="none" stroke="#000"
+                                points="2.5,5.7 10,1.3 17.5,5.7 17.5,14.3 10,18.7 2.5,14.3"></polygon>
+                              <circle fill="none" stroke="#000" cx="10" cy="10" r="3.5"></circle>
+                            </svg></span> nut</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="comment"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M6,18.71 L6,14 L1,14 L1,1 L19,1 L19,14 L10.71,14 L6,18.71 L6,18.71 Z M2,13 L7,13 L7,16.29 L10.29,13 L18,13 L18,2 L2,2 L2,13 L2,13 Z">
+                              </path>
+                            </svg></span> comment</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="commenting"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polygon fill="none" stroke="#000"
+                                points="1.5,1.5 18.5,1.5 18.5,13.5 10.5,13.5 6.5,17.5 6.5,13.5 1.5,13.5"></polygon>
+                              <circle cx="10" cy="8" r="1"></circle>
+                              <circle cx="6" cy="8" r="1"></circle>
+                              <circle cx="14" cy="8" r="1"></circle>
+                            </svg></span> commenting</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="comments"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polyline fill="none" stroke="#000" points="2 0.5 19.5 0.5 19.5 13"></polyline>
+                              <path
+                                d="M5,19.71 L5,15 L0,15 L0,2 L18,2 L18,15 L9.71,15 L5,19.71 L5,19.71 L5,19.71 Z M1,14 L6,14 L6,17.29 L9.29,14 L17,14 L17,3 L1,3 L1,14 L1,14 L1,14 Z">
+                              </path>
+                            </svg></span> comments</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="hashtag"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M15.431,8 L15.661,7 L12.911,7 L13.831,3 L12.901,3 L11.98,7 L9.29,7 L10.21,3 L9.281,3 L8.361,7 L5.23,7 L5,8 L8.13,8 L7.21,12 L4.23,12 L4,13 L6.98,13 L6.061,17 L6.991,17 L7.911,13 L10.601,13 L9.681,17 L10.611,17 L11.531,13 L14.431,13 L14.661,12 L11.76,12 L12.681,8 L15.431,8 Z M10.831,12 L8.141,12 L9.061,8 L11.75,8 L10.831,12 Z">
+                              </path>
+                            </svg></span> hashtag</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="tag"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="none" stroke="#000" stroke-width="1.1"
+                                d="M17.5,3.71 L17.5,7.72 C17.5,7.96 17.4,8.2 17.21,8.39 L8.39,17.2 C7.99,17.6 7.33,17.6 6.93,17.2 L2.8,13.07 C2.4,12.67 2.4,12.01 2.8,11.61 L11.61,2.8 C11.81,2.6 12.08,2.5 12.34,2.5 L16.19,2.5 C16.52,2.5 16.86,2.63 17.11,2.88 C17.35,3.11 17.48,3.4 17.5,3.71 L17.5,3.71 Z">
+                              </path>
+                              <circle cx="14" cy="6" r="1"></circle>
+                            </svg></span> tag</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="cart"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="7.3" cy="17.3" r="1.4"></circle>
+                              <circle cx="13.3" cy="17.3" r="1.4"></circle>
+                              <polyline fill="none" stroke="#000" points="0 2 3.2 4 5.3 12.5 16 12.5 18 6.5 8 6.5">
+                              </polyline>
+                            </svg></span> cart</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="credit-card"><svg width="20"
+                              height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <rect fill="none" stroke="#000" x="1.5" y="4.5" width="17" height="12"></rect>
+                              <rect x="1" y="7" width="18" height="3"></rect>
+                            </svg></span> credit-card</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="mail"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polyline fill="none" stroke="#000" points="1.4,6.5 10,11 18.6,6.5"></polyline>
+                              <path d="M 1,4 1,16 19,16 19,4 1,4 Z M 18,15 2,15 2,5 18,5 18,15 Z"></path>
+                            </svg></span> mail</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="receiver"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="none" stroke="#000" stroke-width="1.01"
+                                d="M6.189,13.611C8.134,15.525 11.097,18.239 13.867,18.257C16.47,18.275 18.2,16.241 18.2,16.241L14.509,12.551L11.539,13.639L6.189,8.29L7.313,5.355L3.76,1.8C3.76,1.8 1.732,3.537 1.7,6.092C1.667,8.809 4.347,11.738 6.189,13.611">
+                              </path>
+                            </svg></span> receiver</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="print"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polyline fill="none" stroke="#000"
+                                points="4.5 13.5 1.5 13.5 1.5 6.5 18.5 6.5 18.5 13.5 15.5 13.5"></polyline>
+                              <polyline fill="none" stroke="#000" points="15.5 6.5 15.5 2.5 4.5 2.5 4.5 6.5"></polyline>
+                              <rect fill="none" stroke="#000" width="11" height="6" x="4.5" y="11.5"></rect>
+                              <rect width="8" height="1" x="6" y="13"></rect>
+                              <rect width="8" height="1" x="6" y="15"></rect>
+                            </svg></span> print</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="search"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9" r="7"></circle>
+                              <path fill="none" stroke="#000" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z"></path>
+                            </svg></span> search</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="location"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="none" stroke="#000" stroke-width="1.01"
+                                d="M10,0.5 C6.41,0.5 3.5,3.39 3.5,6.98 C3.5,11.83 10,19 10,19 C10,19 16.5,11.83 16.5,6.98 C16.5,3.39 13.59,0.5 10,0.5 L10,0.5 Z">
+                              </path>
+                              <circle fill="none" stroke="#000" cx="10" cy="6.8" r="2.3"></circle>
+                            </svg></span> location</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="bookmark"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polygon fill="none" stroke="#000" points="5.5 1.5 15.5 1.5 15.5 17.5 10.5 12.5 5.5 17.5">
+                              </polygon>
+                            </svg></span> bookmark</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="uk-list">
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="code"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polyline fill="none" stroke="#000" stroke-width="1.01" points="13,4 19,10 13,16">
+                              </polyline>
+                              <polyline fill="none" stroke="#000" stroke-width="1.01" points="7,4 1,10 7,16"></polyline>
+                            </svg></span> code</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="paint-bucket"><svg width="20"
+                              height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M10.21,1 L0,11.21 L8.1,19.31 L18.31,9.1 L10.21,1 L10.21,1 Z M16.89,9.1 L15,11 L1.7,11 L10.21,2.42 L16.89,9.1 Z">
+                              </path>
+                              <path fill="none" stroke="#000" stroke-width="1.1" d="M6.42,2.33 L11.7,7.61"></path>
+                              <path
+                                d="M18.49,12 C18.49,12 20,14.06 20,15.36 C20,16.28 19.24,17 18.49,17 L18.49,17 C17.74,17 17,16.28 17,15.36 C17,14.06 18.49,12 18.49,12 L18.49,12 Z">
+                              </path>
+                            </svg></span> paint-bucket</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="camera"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle fill="none" stroke="#000" stroke-width="1.1" cx="10" cy="10.8" r="3.8"></circle>
+                              <path fill="none" stroke="#000"
+                                d="M1,4.5 C0.7,4.5 0.5,4.7 0.5,5 L0.5,17 C0.5,17.3 0.7,17.5 1,17.5 L19,17.5 C19.3,17.5 19.5,17.3 19.5,17 L19.5,5 C19.5,4.7 19.3,4.5 19,4.5 L13.5,4.5 L13.5,2.9 C13.5,2.6 13.3,2.5 13,2.5 L7,2.5 C6.7,2.5 6.5,2.6 6.5,2.9 L6.5,4.5 L1,4.5 L1,4.5 Z">
+                              </path>
+                            </svg></span> camera</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="video-camera"><svg width="20"
+                              height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polygon fill="none" stroke="#000"
+                                points="17.5 6.9 17.5 13.1 13.5 10.4 13.5 14.5 2.5 14.5 2.5 5.5 13.5 5.5 13.5 9.6 17.5 6.9">
+                              </polygon>
+                            </svg></span> video-camera</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="bell"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="none" stroke="#000" stroke-width="1.1"
+                                d="M17,15.5 L3,15.5 C2.99,14.61 3.79,13.34 4.1,12.51 C4.58,11.3 4.72,10.35 5.19,7.01 C5.54,4.53 5.89,3.2 7.28,2.16 C8.13,1.56 9.37,1.5 9.81,1.5 L9.96,1.5 C9.96,1.5 11.62,1.41 12.67,2.17 C14.08,3.2 14.42,4.54 14.77,7.02 C15.26,10.35 15.4,11.31 15.87,12.52 C16.2,13.34 17.01,14.61 17,15.5 L17,15.5 Z">
+                              </path>
+                              <path fill="none" stroke="#000"
+                                d="M12.39,16 C12.39,17.37 11.35,18.43 9.91,18.43 C8.48,18.43 7.42,17.37 7.42,16"></path>
+                            </svg></span> bell</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="microphone"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <line fill="none" stroke="#000" x1="10" x2="10" y1="16.44" y2="18.5"></line>
+                              <line fill="none" stroke="#000" x1="7" x2="13" y1="18.5" y2="18.5"></line>
+                              <path fill="none" stroke="#000" stroke-width="1.1"
+                                d="M13.5 4.89v5.87a3.5 3.5 0 0 1-7 0V4.89a3.5 3.5 0 0 1 7 0z"></path>
+                              <path fill="none" stroke="#000" stroke-width="1.1"
+                                d="M15.5 10.36V11a5.5 5.5 0 0 1-11 0v-.6"></path>
+                            </svg></span> microphone</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="bolt"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M4.74,20 L7.73,12 L3,12 L15.43,1 L12.32,9 L17.02,9 L4.74,20 L4.74,20 L4.74,20 Z M9.18,11 L7.1,16.39 L14.47,10 L10.86,10 L12.99,4.67 L5.61,11 L9.18,11 L9.18,11 L9.18,11 Z">
+                              </path>
+                            </svg></span> bolt</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="star"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polygon fill="none" stroke="#000" stroke-width="1.01"
+                                points="10 2 12.63 7.27 18.5 8.12 14.25 12.22 15.25 18 10 15.27 4.75 18 5.75 12.22 1.5 8.12 7.37 7.27">
+                              </polygon>
+                            </svg></span> star</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="heart"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="none" stroke="#000" stroke-width="1.03"
+                                d="M10,4 C10,4 8.1,2 5.74,2 C3.38,2 1,3.55 1,6.73 C1,8.84 2.67,10.44 2.67,10.44 L10,18 L17.33,10.44 C17.33,10.44 19,8.84 19,6.73 C19,3.55 16.62,2 14.26,2 C11.9,2 10,4 10,4 L10,4 Z">
+                              </path>
+                            </svg></span> heart</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="happy"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="13" cy="7" r="1"></circle>
+                              <circle cx="7" cy="7" r="1"></circle>
+                              <circle fill="none" stroke="#000" cx="10" cy="10" r="8.5"></circle>
+                              <path fill="none" stroke="#000"
+                                d="M14.6,11.4 C13.9,13.3 12.1,14.5 10,14.5 C7.9,14.5 6.1,13.3 5.4,11.4"></path>
+                            </svg></span> happy</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="lifesaver"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M10,0.5 C4.76,0.5 0.5,4.76 0.5,10 C0.5,15.24 4.76,19.5 10,19.5 C15.24,19.5 19.5,15.24 19.5,10 C19.5,4.76 15.24,0.5 10,0.5 L10,0.5 Z M10,1.5 C11.49,1.5 12.89,1.88 14.11,2.56 L11.85,4.82 C11.27,4.61 10.65,4.5 10,4.5 C9.21,4.5 8.47,4.67 7.79,4.96 L5.58,2.75 C6.87,1.95 8.38,1.5 10,1.5 L10,1.5 Z M4.96,7.8 C4.67,8.48 4.5,9.21 4.5,10 C4.5,10.65 4.61,11.27 4.83,11.85 L2.56,14.11 C1.88,12.89 1.5,11.49 1.5,10 C1.5,8.38 1.95,6.87 2.75,5.58 L4.96,7.79 L4.96,7.8 L4.96,7.8 Z M10,18.5 C8.25,18.5 6.62,17.97 5.27,17.06 L7.46,14.87 C8.22,15.27 9.08,15.5 10,15.5 C10.79,15.5 11.53,15.33 12.21,15.04 L14.42,17.25 C13.13,18.05 11.62,18.5 10,18.5 L10,18.5 Z M10,14.5 C7.52,14.5 5.5,12.48 5.5,10 C5.5,7.52 7.52,5.5 10,5.5 C12.48,5.5 14.5,7.52 14.5,10 C14.5,12.48 12.48,14.5 10,14.5 L10,14.5 Z M15.04,12.21 C15.33,11.53 15.5,10.79 15.5,10 C15.5,9.08 15.27,8.22 14.87,7.46 L17.06,5.27 C17.97,6.62 18.5,8.25 18.5,10 C18.5,11.62 18.05,13.13 17.25,14.42 L15.04,12.21 L15.04,12.21 Z">
+                              </path>
+                            </svg></span> lifesaver</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="rss"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="3.12" cy="16.8" r="1.85"></circle>
+                              <path fill="none" stroke="#000" stroke-width="1.1"
+                                d="M1.5,8.2 C1.78,8.18 2.06,8.16 2.35,8.16 C7.57,8.16 11.81,12.37 11.81,17.57 C11.81,17.89 11.79,18.19 11.76,18.5">
+                              </path>
+                              <path fill="none" stroke="#000" stroke-width="1.1"
+                                d="M1.5,2.52 C1.78,2.51 2.06,2.5 2.35,2.5 C10.72,2.5 17.5,9.24 17.5,17.57 C17.5,17.89 17.49,18.19 17.47,18.5">
+                              </path>
+                            </svg></span> rss</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="social"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <line fill="none" stroke="#000" stroke-width="1.1" x1="13.4" y1="14" x2="6.3" y2="10.7">
+                              </line>
+                              <line fill="none" stroke="#000" stroke-width="1.1" x1="13.5" y1="5.5" x2="6.5" y2="8.8">
+                              </line>
+                              <circle fill="none" stroke="#000" stroke-width="1.1" cx="15.5" cy="4.6" r="2.3"></circle>
+                              <circle fill="none" stroke="#000" stroke-width="1.1" cx="15.5" cy="14.8" r="2.3"></circle>
+                              <circle fill="none" stroke="#000" stroke-width="1.1" cx="4.5" cy="9.8" r="2.3"></circle>
+                            </svg></span> social</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="git-branch"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle fill="none" stroke="#000" stroke-width="1.2" cx="7" cy="3" r="2"></circle>
+                              <circle fill="none" stroke="#000" stroke-width="1.2" cx="14" cy="6" r="2"></circle>
+                              <circle fill="none" stroke="#000" stroke-width="1.2" cx="7" cy="17" r="2"></circle>
+                              <path fill="none" stroke="#000" stroke-width="2"
+                                d="M14,8 C14,10.41 12.43,10.87 10.56,11.25 C9.09,11.54 7,12.06 7,15 L7,5"></path>
+                            </svg></span> git-branch</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="git-fork"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle fill="none" stroke="#000" stroke-width="1.2" cx="5.79" cy="2.79" r="1.79">
+                              </circle>
+                              <circle fill="none" stroke="#000" stroke-width="1.2" cx="14.19" cy="2.79" r="1.79">
+                              </circle>
+                              <circle fill="none" stroke="#000" stroke-width="1.2" cx="10.03" cy="16.79" r="1.79">
+                              </circle>
+                              <path fill="none" stroke="#000" stroke-width="2"
+                                d="M5.79,4.57 L5.79,6.56 C5.79,9.19 10.03,10.22 10.03,13.31 C10.03,14.86 10.04,14.55 10.04,14.55 C10.04,14.37 10.04,14.86 10.04,13.31 C10.04,10.22 14.2,9.19 14.2,6.56 L14.2,4.57">
+                              </path>
+                            </svg></span> git-fork</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="world"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="none" stroke="#000" d="M1,10.5 L19,10.5"></path>
+                              <path fill="none" stroke="#000" d="M2.35,15.5 L17.65,15.5"></path>
+                              <path fill="none" stroke="#000" d="M2.35,5.5 L17.523,5.5"></path>
+                              <path fill="none" stroke="#000"
+                                d="M10,19.46 L9.98,19.46 C7.31,17.33 5.61,14.141 5.61,10.58 C5.61,7.02 7.33,3.83 10,1.7 C10.01,1.7 9.99,1.7 10,1.7 L10,1.7 C12.67,3.83 14.4,7.02 14.4,10.58 C14.4,14.141 12.67,17.33 10,19.46 L10,19.46 L10,19.46 L10,19.46 Z">
+                              </path>
+                              <circle fill="none" stroke="#000" cx="10" cy="10.5" r="9"></circle>
+                            </svg></span> world</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="calendar"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M 2,3 2,17 18,17 18,3 2,3 Z M 17,16 3,16 3,8 17,8 17,16 Z M 17,7 3,7 3,4 17,4 17,7 Z">
+                              </path>
+                              <rect width="1" height="3" x="6" y="2"></rect>
+                              <rect width="1" height="3" x="13" y="2"></rect>
+                            </svg></span> calendar</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="clock"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle fill="none" stroke="#000" stroke-width="1.1" cx="10" cy="10" r="9"></circle>
+                              <rect x="9" y="4" width="1" height="7"></rect>
+                              <path fill="none" stroke="#000" stroke-width="1.1" d="M13.018,14.197 L9.445,10.625">
+                              </path>
+                            </svg></span> clock</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="history"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polyline fill="#000" points="1 2 2 2 2 6 6 6 6 7 1 7 1 2"></polyline>
+                              <path fill="none" stroke="#000" stroke-width="1.1"
+                                d="M2.1,6.548 C3.391,3.29 6.746,1 10.5,1 C15.5,1 19.5,5 19.5,10 C19.5,15 15.5,19 10.5,19 C5.5,19 1.5,15 1.5,10">
+                              </path>
+                              <rect x="9" y="4" width="1" height="7"></rect>
+                              <path fill="none" stroke="#000" stroke-width="1.1" d="M13.018,14.197 L9.445,10.625">
+                              </path>
+                            </svg></span> history</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="future"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polyline points="19 2 18 2 18 6 14 6 14 7 19 7 19 2"></polyline>
+                              <path fill="none" stroke="#000" stroke-width="1.1"
+                                d="M18,6.548 C16.709,3.29 13.354,1 9.6,1 C4.6,1 0.6,5 0.6,10 C0.6,15 4.6,19 9.6,19 C14.6,19 18.6,15 18.6,10">
+                              </path>
+                              <rect x="9" y="4" width="1" height="7"></rect>
+                              <path d="M13.018,14.197 L9.445,10.625" fill="none" stroke="#000" stroke-width="1.1">
+                              </path>
+                            </svg></span> future</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="pencil"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="none" stroke="#000"
+                                d="M17.25,6.01 L7.12,16.1 L3.82,17.2 L5.02,13.9 L15.12,3.88 C15.71,3.29 16.66,3.29 17.25,3.88 C17.83,4.47 17.83,5.42 17.25,6.01 L17.25,6.01 Z">
+                              </path>
+                              <path fill="none" stroke="#000" d="M15.98,7.268 L13.851,5.148"></path>
+                            </svg></span> pencil</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="trash"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polyline fill="none" stroke="#000" points="6.5 3 6.5 1.5 13.5 1.5 13.5 3"></polyline>
+                              <polyline fill="none" stroke="#000" points="4.5 4 4.5 18.5 15.5 18.5 15.5 4"></polyline>
+                              <rect x="8" y="7" width="1" height="9"></rect>
+                              <rect x="11" y="7" width="1" height="9"></rect>
+                              <rect x="2" y="3" width="16" height="1"></rect>
+                            </svg></span> trash</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="move"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polygon points="4,5 1,5 1,9 2,9 2,6 4,6"></polygon>
+                              <polygon points="1,16 2,16 2,18 4,18 4,19 1,19"></polygon>
+                              <polygon points="14,16 14,19 11,19 11,18 13,18 13,16"></polygon>
+                              <rect fill="none" stroke="#000" x="5.5" y="1.5" width="13" height="13"></rect>
+                              <rect x="1" y="11" width="1" height="3"></rect>
+                              <rect x="6" y="18" width="3" height="1"></rect>
+                            </svg></span> move</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="uk-list">
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="link"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="none" stroke="#000" stroke-width="1.1"
+                                d="M10.625,12.375 L7.525,15.475 C6.825,16.175 5.925,16.175 5.225,15.475 L4.525,14.775 C3.825,14.074 3.825,13.175 4.525,12.475 L7.625,9.375">
+                              </path>
+                              <path fill="none" stroke="#000" stroke-width="1.1"
+                                d="M9.325,7.375 L12.425,4.275 C13.125,3.575 14.025,3.575 14.724,4.275 L15.425,4.975 C16.125,5.675 16.125,6.575 15.425,7.275 L12.325,10.375">
+                              </path>
+                              <path fill="none" stroke="#000" stroke-width="1.1" d="M7.925,11.875 L11.925,7.975"></path>
+                            </svg></span> link</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="question"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle fill="none" stroke="#000" stroke-width="1.1" cx="10" cy="10" r="9"></circle>
+                              <circle cx="10.44" cy="14.42" r="1.05"></circle>
+                              <path fill="none" stroke="#000" stroke-width="1.2"
+                                d="M8.17,7.79 C8.17,4.75 12.72,4.73 12.72,7.72 C12.72,8.67 11.81,9.15 11.23,9.75 C10.75,10.24 10.51,10.73 10.45,11.4 C10.44,11.53 10.43,11.64 10.43,11.75">
+                              </path>
+                            </svg></span> question</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="info"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M12.13,11.59 C11.97,12.84 10.35,14.12 9.1,14.16 C6.17,14.2 9.89,9.46 8.74,8.37 C9.3,8.16 10.62,7.83 10.62,8.81 C10.62,9.63 10.12,10.55 9.88,11.32 C8.66,15.16 12.13,11.15 12.14,11.18 C12.16,11.21 12.16,11.35 12.13,11.59 C12.08,11.95 12.16,11.35 12.13,11.59 L12.13,11.59 Z M11.56,5.67 C11.56,6.67 9.36,7.15 9.36,6.03 C9.36,5 11.56,4.54 11.56,5.67 L11.56,5.67 Z">
+                              </path>
+                              <circle fill="none" stroke="#000" stroke-width="1.1" cx="10" cy="10" r="9"></circle>
+                            </svg></span> info</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="warning"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="10" cy="14" r="1"></circle>
+                              <circle fill="none" stroke="#000" stroke-width="1.1" cx="10" cy="10" r="9"></circle>
+                              <path
+                                d="M10.97,7.72 C10.85,9.54 10.56,11.29 10.56,11.29 C10.51,11.87 10.27,12 9.99,12 C9.69,12 9.49,11.87 9.43,11.29 C9.43,11.29 9.16,9.54 9.03,7.72 C8.96,6.54 9.03,6 9.03,6 C9.03,5.45 9.46,5.02 9.99,5 C10.53,5.01 10.97,5.44 10.97,6 C10.97,6 11.04,6.54 10.97,7.72 L10.97,7.72 Z">
+                              </path>
+                            </svg></span> warning</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="image"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="16.1" cy="6.1" r="1.1"></circle>
+                              <rect fill="none" stroke="#000" x=".5" y="2.5" width="19" height="15"></rect>
+                              <polyline fill="none" stroke="#000" stroke-width="1.01" points="4,13 8,9 13,14">
+                              </polyline>
+                              <polyline fill="none" stroke="#000" stroke-width="1.01" points="11,12 12.5,10.5 16,14">
+                              </polyline>
+                            </svg></span> image</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="thumbnails"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <rect fill="none" stroke="#000" x="3.5" y="3.5" width="5" height="5"></rect>
+                              <rect fill="none" stroke="#000" x="11.5" y="3.5" width="5" height="5"></rect>
+                              <rect fill="none" stroke="#000" x="11.5" y="11.5" width="5" height="5"></rect>
+                              <rect fill="none" stroke="#000" x="3.5" y="11.5" width="5" height="5"></rect>
+                            </svg></span> thumbnails</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="table"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <rect x="1" y="3" width="18" height="1"></rect>
+                              <rect x="1" y="7" width="18" height="1"></rect>
+                              <rect x="1" y="11" width="18" height="1"></rect>
+                              <rect x="1" y="15" width="18" height="1"></rect>
+                            </svg></span> table</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="list"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <rect x="6" y="4" width="12" height="1"></rect>
+                              <rect x="6" y="9" width="12" height="1"></rect>
+                              <rect x="6" y="14" width="12" height="1"></rect>
+                              <rect x="2" y="4" width="2" height="1"></rect>
+                              <rect x="2" y="9" width="2" height="1"></rect>
+                              <rect x="2" y="14" width="2" height="1"></rect>
+                            </svg></span> list</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="menu"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <rect x="2" y="4" width="16" height="1"></rect>
+                              <rect x="2" y="9" width="16" height="1"></rect>
+                              <rect x="2" y="14" width="16" height="1"></rect>
+                            </svg></span> menu</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="grid"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <rect x="2" y="2" width="3" height="3"></rect>
+                              <rect x="8" y="2" width="3" height="3"></rect>
+                              <rect x="14" y="2" width="3" height="3"></rect>
+                              <rect x="2" y="8" width="3" height="3"></rect>
+                              <rect x="8" y="8" width="3" height="3"></rect>
+                              <rect x="14" y="8" width="3" height="3"></rect>
+                              <rect x="2" y="14" width="3" height="3"></rect>
+                              <rect x="8" y="14" width="3" height="3"></rect>
+                              <rect x="14" y="14" width="3" height="3"></rect>
+                            </svg></span> grid</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="more"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="3" cy="10" r="2"></circle>
+                              <circle cx="10" cy="10" r="2"></circle>
+                              <circle cx="17" cy="10" r="2"></circle>
+                            </svg></span> more</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="more-vertical"><svg width="20"
+                              height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="10" cy="3" r="2"></circle>
+                              <circle cx="10" cy="10" r="2"></circle>
+                              <circle cx="10" cy="17" r="2"></circle>
+                            </svg></span> more-vertical</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="plus"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <rect x="9" y="1" width="1" height="17"></rect>
+                              <rect x="1" y="9" width="17" height="1"></rect>
+                            </svg></span> plus</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="plus-circle"><svg width="20"
+                              height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle>
+                              <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line>
+                              <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line>
+                            </svg></span> plus-circle</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="minus"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <rect height="1" width="18" y="9" x="1"></rect>
+                            </svg></span> minus</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="minus-circle"><svg width="20"
+                              height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle>
+                              <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line>
+                            </svg></span> minus-circle</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="close"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="none" stroke="#000" stroke-width="1.06" d="M16,16 L4,4"></path>
+                              <path fill="none" stroke="#000" stroke-width="1.06" d="M16,4 L4,16"></path>
+                            </svg></span> close</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="check"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+                            </svg></span> check</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="ban"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <circle fill="none" stroke="#000" stroke-width="1.1" cx="10" cy="10" r="9"></circle>
+                              <line fill="none" stroke="#000" stroke-width="1.1" x1="4" y1="3.5" x2="16" y2="16.5">
+                              </line>
+                            </svg></span> ban</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="refresh"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="none" stroke="#000" stroke-width="1.1"
+                                d="M17.08,11.15 C17.09,11.31 17.1,11.47 17.1,11.64 C17.1,15.53 13.94,18.69 10.05,18.69 C6.16,18.68 3,15.53 3,11.63 C3,7.74 6.16,4.58 10.05,4.58 C10.9,4.58 11.71,4.73 12.46,5">
+                              </path>
+                              <polyline fill="none" stroke="#000" points="9.9 2 12.79 4.89 9.79 7.9"></polyline>
+                            </svg></span> refresh</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="play"><svg width="20" height="20"
+                              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polygon fill="none" stroke="#000" points="6.5,5 14.5,10 6.5,15"></polygon>
+                            </svg></span> play</li>
+                        <li><span class="uk-margin-small-right uk-icon" uk-icon="play-circle"><svg width="20"
+                              height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <polygon fill="none" stroke="#000" stroke-width="1.1" points="8.5 7 13.5 10 8.5 13">
+                              </polygon>
+                              <circle fill="none" stroke="#000" stroke-width="1.1" cx="10" cy="10" r="9"></circle>
+                            </svg></span> play-circle</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /panel -->
+        </div>
+        <footer class="uk-section uk-section-small uk-text-center">
+          <hr>
+          <p class="uk-text-small uk-text-center">Copyright 2021 - <a href="https://github.com/digitalfront-br">Created
+              by DigitalFront</a> | Built with <a href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank"
+              data-uk-tooltip><span data-uk-icon="uikit"></span></a> </p>
+        </footer>
+      </div>
+      <!-- /CONTENT -->
+    </div>
+  </div>
+  <div id="offcanvas-sidebar" uk-offcanvas="overlay: true; mode: push">
+    <div class="uk-offcanvas-bar">
+      <aside class="uk-height-viewport uk-padding-vertical uk-padding-small sidebar-left">
+        <div>
+          <div class="uk-logo uk-text-center uk-margin-small-top uk-margin-bottom">
+            <img src="img/logo-1.svg" alt="" uk-svg>
+          </div>
+          <hr>
+        </div>
+        <div class="uk-flex uk-flex-between uk-flex-column menu" uk-height-viewport="expand: true">
+          <ul class="uk-nav uk-nav-default uk-text-center">
+            <li class="uk-active">
+              <a href="#">
+                <!--<span uk-icon="icon: user; ratio: 1.2"></span> -->
+                <i data-feather="user"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <!-- <span uk-icon="icon: grid; ratio: 1.2"></span> -->
+                <i data-feather="grid"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <!-- <span uk-icon="icon: github; ratio: 1.2"></span> -->
+                <i data-feather="github"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="uk-position-bottom logout-block">
+            <ul class="uk-nav uk-nav-default uk-text-center uk-margin-bottom">
+              <li>
+                <a href="#" class="uk-text-muted">
+                  <!-- <span uk-icon="icon: settings; ratio: 1.2"></span> -->
+                  <i data-feather="settings"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+  <!-- JS FILES -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit-icons.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
+</body>
+
+</html>
