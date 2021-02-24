@@ -26,7 +26,7 @@ util.on(search, 'keyup', () => {
 			util.attr(searchVal, 'data-uk-filter-control', searchTerm);
 			searchValAll.click();
 		}
-	}, 200);
+	}, 300);
 });
 
 // prevent send form on press enter
