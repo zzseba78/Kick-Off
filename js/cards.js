@@ -1,25 +1,37 @@
-var search = UIkit.util.$('.search-fld');
-var searchVal = UIkit.util.$('.search-filter');
-var filterBtn = UIkit.util.$$('li[data-uk-filter-control] a');
-var formEl = UIkit.util.$('#search-form');
-var debounce;
+const util = UIkit.util;
+const search = util.$('.search-fld');
+const searchVal = util.$('.search-filter');
+const searchValAll = util.$('.search-filter-all');
+const searchValNone = util.$('.search-filter-none');
+const filterBtn = util.$$('li[data-uk-filter-control] a');
+const formEl = util.$('#search-form');
+let debounce,searchTerm, value;
 
-UIkit.util.on(search, 'keyup', function() {
+// when write on field
+util.on(search, 'keyup', () => {
 	clearTimeout(debounce);
-	debounce = setTimeout(function() {
-		var value = search.value;
-		var finalValue = value.toLowerCase();
-		var searchTerm = '';
+	
+	debounce = setTimeout(() => {
+		// get input value and convert to lower case
+		value = search.value.toLowerCase();
 
-		if (value.length) searchTerm = '[data-tags*="' + finalValue + '"]';
-		UIkit.util.attr(searchVal, 'data-uk-filter-control', searchTerm);
-		searchVal.click();
-	}, 300);
+		if (value.length) {
+			searchTerm = '[data-tags*="' + value + '"]';
+			util.attr(searchVal, 'data-uk-filter-control', searchTerm);
+			searchValNone.click();
+			searchVal.click();
+		} else {
+			searchTerm = '[data-tags*=""]';
+			// empty attribute
+			util.attr(searchVal, 'data-uk-filter-control', searchTerm);
+			searchValAll.click();
+		}
+	}, 200);
 });
 
 // prevent send form on press enter
-UIkit.util.on(formEl, 'keypress', function(e) {
-	var key = e.charCode || e.keyCode || 0;
+util.on(formEl, 'keypress', e => {
+	const key = e.charCode || e.keyCode || 0;
 	if (key == 13) {
 		e.preventDefault();
 		console.log('Prevent submit on press enter');
@@ -27,14 +39,17 @@ UIkit.util.on(formEl, 'keypress', function(e) {
 });
 
 // empty field and attribute on click filter button
-UIkit.util.on(filterBtn, 'click', function() {
-	var inputVal = search.value;
-	if (inputVal.length) {
+util.on(filterBtn, 'click', () => {
+	if (search.value.length) {
 		// empty field
 		search.value = '';
 		searchTerm = '[data-tags*=""]';
 		// empty attribute
-		UIkit.util.attr(searchVal, 'data-uk-filter-control', searchTerm);
+		util.attr(searchVal, 'data-uk-filter-control', searchTerm);
 		console.log('empty field and attribute');
 	}
 });
+
+util.on(searchValNone, 'click', e => {
+	e.preventDefault();
+})

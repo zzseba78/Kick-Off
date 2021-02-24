@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/uikit@latest/dist/css/uikit.min.css">
 		<link rel="stylesheet" type="text/css" href="css/cards.css">
 	</head>
-	<body data-uk-filter="target: .js-filter">
+	<body data-uk-filter="target: .js-filter; animation: fade">
 		
 		<!--HEADER-->
 		<header id="site-head">
@@ -23,7 +23,9 @@
 							<div class="uk-inline uk-width-1-1">
 								<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: search"></span>
 								<input class="uk-input uk-width-1-1 search-fld" type="text" placeholder="Type your search" autofocus>
-								<a href="#" class="search-filter" data-uk-filter-control="[data-tags*='']" hidden>Search</a>
+								<a href="#" class="search-filter" data-uk-filter-control="[data-tags*='']">Search</a>
+								<a href="#" class="search-filter-all" data-uk-filter-control>Search all</a>
+								<a href="#" class="search-filter-none" data-uk-filter-control="[data-empty='']">Filter none</a>
 							</div>
 						</form>
 					</div>
@@ -91,7 +93,7 @@
 		<section class="uk-section uk-section-small uk-section-default uk-padding-remove-bottom">
 			<div class="uk-container uk-container-expand uk-margin-large-bottom">
 				<ul class="uk-subnav uk-subnav-pill">
-					<li class="uk-active" data-uk-filter-control><a href="#">Show All</a></li>
+					<li class="uk-active" data-uk-filter-control=""><a href="#">Show All</a></li>
 					<li data-uk-filter-control=".nature-card"><a href="#">Nature</a></li>
 					<li data-uk-filter-control=".music-card"><a href="#">Music</a></li>
 					<li data-uk-filter-control=".photo-card"><a href="#">Photography</a></li>
