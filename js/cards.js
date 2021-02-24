@@ -18,12 +18,16 @@ util.on(search, 'keyup', () => {
 		if (value.length) {
 			searchTerm = '[data-tags*="' + value + '"]';
 			util.attr(searchVal, 'data-uk-filter-control', searchTerm);
+			// click on hidden link that gives 0 results, allow to click again filter link
 			searchValNone.click();
+			// click hidden link that filter the search
 			searchVal.click();
 		} else {
+			// if search field is empty
 			searchTerm = '[data-tags*=""]';
 			// empty attribute
 			util.attr(searchVal, 'data-uk-filter-control', searchTerm);
+			// click hidden show all link
 			searchValAll.click();
 		}
 	}, 300);
