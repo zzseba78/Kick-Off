@@ -60,7 +60,7 @@ At the moment these layouts are available ( more will be available soon! )
 
 <p align="center">
   <b>Become a sponsor to UIkit and help the project grow.</b>
-  <br>
+  <br><br>
   <a href="https://github.com/sponsors/uikit" align="center">
       <img width="80" height="80" src="https://avatars.githubusercontent.com/u/4173184?s=160&v=4">
   </a>
