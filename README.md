@@ -70,7 +70,7 @@ At the moment these layouts are available ( more will be available soon! )
 
 <p align="center">
   <b>UIkit is an Open Source project developed by YOOtheme.</b>
-  <br><br>
+  <br>
   <a href="https://github.com/sponsors/uikit" target="_blank" align="center">
       <img width="90" height="90" src="https://camo.githubusercontent.com/c5f5d696fa01a713c6e53adc115019f14e064f14/687474703a2f2f796f6f7468656d652e636f6d2f736974652f696d616765732f796f6f7468656d652d6c6f676f2e737667">
   </a>
