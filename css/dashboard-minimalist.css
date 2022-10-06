@@ -1,0 +1,118 @@
+* {
+	font-family: "Montserrat", sans-serif;
+}
+html {
+	background-color: #f8f8f8;
+	font-size: 16.5px;
+	font-weight: normal;
+	line-height: 1.6;
+	-webkit-text-size-adjust: 100%;
+	color: #555;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+#sidenav-col {
+	width: 96px;
+	background: #ffffff;
+	border-radius: 0 20px 0 0;
+	border-right: 1px solid #dedede;
+}
+.logout-block {
+	width: 97px;
+}
+hr {
+	border-color: #cccccc !important;
+}
+.uk-logo svg {
+	max-width: 30px;
+	filter: brightness(0);
+}
+.menu .uk-nav > li > a {
+	padding: 15px 0;
+}
+.main .uk-container {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.sidebar-left {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 96px !important;
+	background: #ffffff;
+	border-radius: 0 20px 0 0;
+	border-right: 1px solid #dedede;
+}
+.sidebar-left + .main {
+	padding-left: 96px;
+}
+@media (max-width: 640px) {
+	.sidebar-left + .main {
+		padding-left: 15px;
+	}
+}
+.uk-offcanvas-bar {
+	width: 97px;
+	background: none;
+	padding: 0;
+	border-radius: 0 30px 0 0;
+	border-right: 1px solid #dedede;
+}
+:not(.uk-offcanvas-flip).uk-offcanvas-container-animation {
+	left: 97px;
+}
+.avatar-icon img {
+	height: 45px;
+}
+
+.avatar-icon {
+	border-radius: 50%;
+	overflow: auto;
+	min-width: 45px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.mobile .uk-icon.uk-icon-close {
+	display: none;
+}
+.uk-offcanvas-container-animation .uk-icon.uk-navbar-toggle-icon {
+	display: none;
+}
+.uk-offcanvas-container-animation .uk-icon.uk-icon-close {
+	display: block;
+}
+.uk-offcanvas-bar .uk-nav-default > li.uk-active > a {
+	color: #000 !important;
+}
+.uk-navbar-toggle {
+	color: #999;
+	min-width: 50px;
+}
+
+.uk-card-primary.uk-card-body .uk-logo,
+.uk-card-primary > :not([class*="uk-card-media"]) .uk-logo,
+.uk-card-secondary.uk-card-body .uk-logo,
+.uk-card-secondary > :not([class*="uk-card-media"]) .uk-logo,
+.uk-light .uk-logo,
+.uk-offcanvas-bar .uk-logo,
+.uk-overlay-primary .uk-logo,
+.uk-section-primary:not(.uk-preserve-color) .uk-logo,
+.uk-section-secondary:not(.uk-preserve-color) .uk-logo,
+.uk-tile-primary:not(.uk-preserve-color) .uk-logo,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-logo {
+	color: #000 !important;
+}
+
+.uk-card-primary.uk-card-body .uk-nav-default > li > a,
+.uk-card-primary > :not([class*="uk-card-media"]) .uk-nav-default > li > a,
+.uk-card-secondary.uk-card-body .uk-nav-default > li > a,
+.uk-card-secondary > :not([class*="uk-card-media"]) .uk-nav-default > li > a,
+.uk-light .uk-nav-default > li > a,
+.uk-offcanvas-bar .uk-nav-default > li > a,
+.uk-overlay-primary .uk-nav-default > li > a,
+.uk-section-primary:not(.uk-preserve-color) .uk-nav-default > li > a,
+.uk-section-secondary:not(.uk-preserve-color) .uk-nav-default > li > a,
+.uk-tile-primary:not(.uk-preserve-color) .uk-nav-default > li > a,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-nav-default > li > a {
+	color: #999 !important;
+}
